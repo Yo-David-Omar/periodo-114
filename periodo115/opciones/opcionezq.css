@@ -1,0 +1,485 @@
+/*opciones lado lateral buscador (autoridades, indice, nomenclador, cuadro de leyes, diario sesiones.
+opciones latera izquierdo periodos legislativos
+div next footer, final de la pagina con opciones de botones para seguir a siguiente pagina
+Responsive en todos)*/
+
+/*barra opcional lado derecho*/
+@import url('https://fonts.googleapis.com/css2?family=Meie+Script&family=Parisienne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=UnifrakturMaguntia&display=swap');
+
+.up-img{
+    background-color: rgb(149, 197, 228);
+    margin-left: 2%;
+    border-bottom: .5px double rgb(10, 8, 8);
+    color: #777e81;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.borde1{
+    
+    position: fixed;
+    top: 25%;
+    left: 70%;
+    width: 40%;
+    
+}
+
+.borde1 a{
+    text-decoration: none;
+    display: none;
+    border-bottom: 1px solid rgb(210, 193, 193);
+    margin-top: 3%;
+}
+
+.borde1 img{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    width: 17%;
+   
+}
+.borde1:hover div a{
+    display: block;
+  
+    border-radius: -24px;
+   
+}
+
+.borde1 div a:hover p{
+    padding-left: 10%;
+    color: rgb(255, 255, 255);
+    background-color: darkcyan;
+    text-shadow: 1px 1px 3px rgb(3, 3, 2);   
+}
+
+.borde1 div p{
+    transition: all .5s;
+    padding: 1%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
+.borde1 .bde{   
+    margin: 1%;
+    width: 7%;
+    margin-left: 35%; 
+}
+
+
+/*barra lateral de opciones lado izquierdo*/
+.caja{
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    left: -10%;
+    padding: 0;
+    width: 12%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(/imagenescudo/linealopciones.png);
+    background-size: contain;
+    z-index: 300;
+    transition: all .5s;
+    
+}
+.caja:hover{
+    left: 0;
+    background-image: linear-gradient(to bottom right, rgb(97, 154, 207) -60%, #fcfcfc 100%);
+}
+
+.caja div{
+    text-transform: uppercase;
+    margin-left: 1%;
+    width: 100%;
+    text-align: center;
+}
+.caja:hover div a{
+    color:rgb(97, 154, 207);
+}
+
+.caja a{
+    transition: all .5s;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    color: darkcyan;
+    border-bottom: 1px solid rgb(97, 154, 207);
+    font-size: .8em;
+    font-weight: bold;
+}
+
+.caja a:hover{
+    
+    background-color: #fcfcfc;
+    font-size: .9em;
+    border-radius: 26px;
+    
+}
+
+.referencias{
+    position: absolute;
+    background-color: cornflowerblue;
+    width: 100%;
+    left: 0;
+}
+
+.referencias a{
+    display: none;
+    text-align: center;
+    color: #0c0707;
+    padding: 7% 0;
+    width: 100%;
+    font-size: .6em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.caja-int:hover .referencias a{
+    display: flex;
+    flex-direction: column;
+    color: rgb(24, 24, 22);
+    
+}
+.referencias:hover a{
+    width: 100%;
+    
+}
+.referencias a:hover{
+    font-size: .7em;
+    color:rgb(27, 35, 42);
+    
+}
+/*---------------------------------------*/
+.btop{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 3%;
+    background-color: brown;
+    box-shadow: 1px 1px 2px rgb(180, 180, 237);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    z-index: 400;
+}
+.btop a{
+    padding: 2%;
+    transition: all .5s;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: .8em;
+}
+
+.btop a:hover{
+    font-size: 1.1em;
+}
+
+.btop a span{
+    background-color: rgb(224, 188, 188);
+    border: 1px solid black;
+    border-radius: 24px;
+    padding: 4%;
+    font-size: .8em;
+    font-family:'Arial Narrow', Arial, sans-serif;
+    color: black;
+    
+}
+
+picture{
+    position: fixed;
+    left: 75%;
+    width: 100%;
+    top: 5%;
+    
+}
+img{
+    width: 20%; 
+}
+/*footer para siguiente pagina con valores para secretaria y mandatoleg*/
+
+
+/*final de pagina con opcion siguiente pagina*/
+.next{
+    opacity: .5;
+    height: 20%;
+    background-color: rgb(233, 230, 230);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 400;
+}
+.next footer{
+    background-color: rgb(222, 222, 214);
+    margin: 3%;
+    text-align: center;
+    
+    border-radius: 24px;
+    box-shadow: 1px 1px 2px rgb(86, 86, 84);
+    width: 14%;
+}
+.next footer:hover{
+    background-color: #777e81;
+}
+.next a:hover{
+    color: white;
+    border-bottom: 2px solid black;
+}
+.next a{
+    transition: all .5s;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(42, 39, 39);
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    border-bottom: 1px solid rgb(99, 91, 91);
+}
+/*titulo y subtitulo */
+ 
+/*logo de la legislatura*/
+
+
+.imagenhl{
+    position: fixed;
+    left: 75%; 
+    width: 100%;
+    top: 5%;
+    z-index: 200;
+    transition: all .5s;
+}
+
+.imagenhl img{
+    position: fixed;
+    top: 4%;
+    width: 14%;
+    right: 16%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    transition: all .9s;
+    padding-left: 5%;
+}
+.imagenhl p{
+    display: none;
+    margin-top: 2%;
+    width: 18%;
+    text-align: center;
+    
+    line-height: 22px;
+    transition: all .5s;
+}
+.imagenhl:hover p{
+    display: block;
+}
+.imagenhl p span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .6em;
+    display: none;
+}
+.imagenhl:hover p span{
+    color: brown;
+    display: block;
+}
+.imagenhl:hover img{
+    right: 0;
+}
+.imagenhl:hover p{
+    color: black;
+}
+.letra p{
+    font-family: "Parisienne", cursive;
+   
+}
+
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+    .borde1{
+        top: 15%;
+    }
+    .borde1 p{
+        font-size: .7em;
+    }
+    
+    .borde1 a{
+        font-size: .8em;
+        margin-left: 5%;
+    }
+
+    .btop a{
+        font-size: .5em;
+    }
+    .btop a:hover{
+        font-size: .8em;
+    }
+
+
+	.caja{
+        
+        width: 16%;
+    }
+    
+    .caja div{
+        font-size: .4em;
+    }
+
+
+  
+    .caja-int .referencias a{
+        font-size: .5em;
+    }
+    
+   
+    .caja-int div a{
+        font-size: .4em;
+    }
+    .next{
+        width: 100%;
+    }
+    .next footer{
+        width: 18%;
+    }
+    .next footer a{
+        font-size: .5em;
+    }
+    .imagenhl p{
+        font-size: .4em;
+    }
+    .imagenhl p span{
+        font-size: .4em;
+    }
+    .imagenhl p span:hover{
+        font-size: .4em;
+    }
+    
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .up-img{
+        
+        width: 80%;
+        margin-left: 15%;
+    }
+    .borde1{
+        top: 17%;
+        width: 70%;
+        left: 70%;
+    }
+    .borde1 p{
+        font-size: .8em;
+    }
+    
+    .borde1 a{
+        font-size: .9em;
+        margin-left: 4%;
+    }
+
+    .btop a{
+        font-size: .7em;
+    }
+    .btop a:hover{
+        font-size: .9em;
+    }
+
+    
+	.caja{
+        
+        width: 13%;
+    }
+    
+    .caja div{
+        font-size: .7em;
+    }
+
+    .caja div:hover{
+        font-size: .8em;
+    }
+  
+    .caja-int .referencias a{
+        font-size: .7em;
+    }
+    
+    .caja-int .referencias a:hover{
+        font-size: .8em;
+    }
+    .next{
+        width: 100%;
+    }
+    .next footer a{
+        font-size: .8em;
+    }
+    .imagenhl p{
+        font-size: .4em;
+    }
+    .imagenhl p span{
+        font-size: .4em;
+    }
+}
+	
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+    .up-img{
+        width: 80%;
+        margin-left: 15%;
+    }
+    .borde1{
+        width: 70%;
+        left: 70%;
+    }
+    .borde1 p{
+        font-size: .8em;
+    }
+    
+    .borde1 a{
+        font-size: .9em;
+        margin-left: 4%;
+    }
+
+    .btop a{
+        font-size: .7em;
+    }
+    .btop a:hover{
+        font-size: .9em;
+    }
+
+    
+    
+	.caja{
+        
+        width: 13%;
+    }
+    
+    .caja div{
+        font-size: .8em;
+    }
+
+    .caja div:hover{
+        font-size: .9em;
+    }
+  
+    .caja-int .referencias a{
+        font-size: .8em;
+    }
+    
+    .caja-int .referencias a:hover{
+        font-size: .9em;
+    }
+    .next{
+        width: 100%;
+    }
+    .next footer{
+        width: 20%;
+    }
+    .next footer a{
+        font-size: .9em;
+    }
+}
+
+

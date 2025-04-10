@@ -1,0 +1,965 @@
+
+@import "/diariosesiones/responsive.css";
+@import url('https://fonts.googleapis.com/css2?family=Meie+Script&family=Parisienne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body{
+    background-color: rgb(245, 240, 233);
+    font-family: 'Times New Roman', Times, serif;
+}
+/*cuadro del lado derecho de la pantalla */
+
+.cuadrocolor{
+    background-color: white;
+    position: fixed;
+    top: 3%;
+    right: -1.5%;
+    width: 25%;
+    height: 100%;
+    overflow: scroll;
+}
+.cuadrocolor div{
+    padding: 3%;
+}
+
+
+.slider-container {
+    width: 100%; /* Ajusta el ancho según lo necesites */
+    height: 180px; /* Ajusta el alto según lo necesites */
+    overflow: hidden;
+    max-height: 100%;
+    
+    
+}
+
+.slider-container img {
+    border-radius: 2%;
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.bord{
+    width: 100%;
+    height: 100vh;
+    
+    overflow: auto;
+    max-height: 100%;
+    width: calc(100% + 20px);
+    
+}
+.bord div{
+    border-right: 10px solid cadetblue;
+}
+
+.titulo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: center;
+    background-color: cadetblue;
+    color: mistyrose;
+}
+.bord a{
+    text-decoration: none;
+    margin-top: 3%;
+    
+}
+
+.bord img{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    width: 17%;
+   
+}
+
+
+.bord div a:hover p{
+    border-bottom: 1px solid rgb(100, 90, 90);
+    padding-left: 10%;
+    color: rgb(255, 255, 255);
+    background-color: darkcyan;
+    text-shadow: 1px 1px 3px rgb(3, 3, 2);   
+}
+
+.bord div p{
+    transition: all .5s;
+    padding: 1%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
+/*--------------------------------------*/
+i{
+    font-size: 2em;
+}
+.planillas{
+position: fixed;
+    width: 18%;
+    left: 78%;
+    top: 69%;
+}
+/*-----------------------------------------------------*/
+video{
+    position: fixed;
+    width: 18%;
+    left: 78%;
+    top: 69%;
+}
+/*-----------------------------------------------------*/
+a{
+    text-decoration: none;
+    color: rgb(173, 118, 78);
+}
+ 
+.grb{
+    position: fixed;
+    left: 65%;
+    top: 30%;
+    width: 30%   
+}
+ 
+
+.grb h1{
+    text-align: center;
+    color:  rgb(245, 240, 233);
+    text-shadow: 1px 0px  0px #cfd1d1;
+    transition: all .4s;
+    font-size: 4em;
+    opacity: 50%;
+    width: 100%;
+}
+.grb:hover h1{
+    text-shadow: 0px 0px  10px #cfd1d1;
+    opacity: 80%;
+}
+
+/*------------------------------------------------------------------
+
+.up-img{
+    background-color: rgb(149, 197, 228);
+    margin-left: 2%;
+    border-bottom: .5px double rgb(10, 8, 8);
+    color: #777e81;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+} 
+
+.borde1{
+    
+    position: fixed;
+    top: 25%;
+    left: 70%;
+    width: 40%;
+    z-index: 4;
+}
+
+.borde1 a{
+    background-color: rgb(141, 70, 70);
+    color: rgb(213, 213, 231);
+    text-decoration: none;
+    display: none;
+    border: 1px solid black;
+    border-radius: 24px;
+    margin-top: 3%;
+}
+
+.borde1 img{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    width: 18%;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 24px;
+}
+.borde1:hover div a{
+    display: block;
+    border-left: 1px solid rgb(160, 128, 128);
+    border-radius: -24px;
+   
+}
+
+.borde1 div a:hover p{
+    padding-left: 10%;
+    color: lightgrey;
+}
+
+.borde1 div p{
+    transition: all .5s;
+    padding: 1%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 1px 1px 3px rgb(3, 3, 2);   
+}
+
+.borde1 .bde{   
+    margin: 1%;
+    width: 7%;
+    margin-left: 35%; 
+}
+
+/*--------------------------------------------------------------------*/
+.tomos{
+    width: 30%;
+    position: fixed;
+    right: -2%;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    transition: all .5s;
+}
+
+.tomos div{
+    
+    padding: 4%;
+}
+
+.parte{
+    transition: all .5s;
+}
+
+.parte a{
+    background-color: rgb(141, 70, 70);
+    border: .2px solid rgb(205, 191, 191);
+    border-bottom-left-radius: 26px;
+    border-top-left-radius: 26px;
+    padding: 5px;
+    color: rgb(182, 210, 210);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 1px 1px 3px rgb(3, 3, 2);
+    transition: all .5s;
+}
+
+.tomos div a{
+    display: none;
+}
+
+.tomos:hover div a {
+    display: block;
+    
+}
+
+.tomos div a:hover{
+    
+    padding-left: 28%;
+    
+}
+
+
+/*------------------------------------------------------------------*/
+    
+
+.ira{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 10%;
+}
+
+.ira img{ 
+    padding-top: .6%; 
+    width: 16%;
+    margin-left: 70%;
+    transition: all .5s;
+}
+.ira img:hover{
+    transform: rotate(0.5turn);
+}
+
+
+.cont{
+    width: 37%;
+    margin: 0 0 5% 27%;
+    display: flex;
+    flex-direction: column;  
+}
+
+.cont h4{
+    text-align: center;
+    line-height: 1.4em;
+    margin: 10%;
+    color:cornflowerblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:600;
+    
+}
+
+.cont h3{
+    margin-top: 10%;
+    position: relative;
+    left: 46%;
+    width: 9%;
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;    
+}
+
+.cont h3:hover{
+    color: white;
+    background-color: rgb(208, 225, 225);
+    border-bottom: 1px solid black;
+    width: 50px;   
+}
+
+.cont p{
+    font-size: .85em;
+    margin:10px;                                                                                                                              
+    text-align: justify;      
+}
+
+.fleg{
+    width: 100%;
+}
+
+.fleg p{
+    margin: 10% 0 10% 48%;
+    width: 50%;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: justify;
+    font-size: .9em;
+}
+
+.c-r{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8em;
+    line-height: 1.25em;
+}
+
+/*.cont-romanos - cierra informacion de los asuntos entrados en arial 
+
+.imagenhl{
+    position: fixed;
+    left: 75%; 
+    width: 100%;
+    top: 5%;
+    z-index: 400;
+    transition: all .5s;
+    
+}
+
+.imagenhl img{
+    position: fixed;
+    top: 4%;
+    width: 10%;
+    right: 16%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    transition: all .9s;
+}
+.imagenhl p{
+    color: rgb(245, 240, 233);
+    margin-top: 2%;
+    width: 18%;
+    text-align: center;
+    font-size: 1em;
+    line-height: 22px;
+    transition: all .5s;
+}
+.imagenhl p span{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(245, 240, 233)
+}
+.imagenhl p:hover span{
+    color: brown;
+    font-size: .6em;
+}
+.imagenhl:hover img{
+    right: 0;
+}
+.imagenhl:hover p{
+    color: black;
+}
+.letra p{
+    font-family: "Parisienne", cursive;
+   
+}
+
+/*link pie-pagina2 luego transformado a pp2*/
+
+.pp2 a{
+    font-size: 1.2em;
+
+}
+
+.pp2 p:hover a{
+    line-height: 2;
+}
+
+.pp2 a:hover{
+    transition: all 1s;
+    color: rgb(253, 250, 250);
+    font-size: 1.3em;
+    background-color: black;
+    padding: 3%;
+}
+
+.pp{
+    margin-left: 23%;
+    width: 40%;
+}
+
+.pp p{
+    text-align: center;
+   
+}
+
+.pp1{
+    text-align: justify;
+    line-height: 1.4em;
+    margin-top: 15%;
+    display: block;
+    float: right;
+    width: 45%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .7em;
+}
+
+.pp2{
+    text-align: justify;
+    width: 100%;
+    line-height: 1.2em;
+    display: flex;
+    justify-content: right;
+    font-size: .8em;
+}
+
+.pp2 p{ 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9em;
+    width: 50%;
+    margin-bottom: 3%;
+}
+
+.pp2 span{
+    width: 50%;
+    margin: 10% 0 2% 0;
+   
+}
+
+.pp2 em{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+}
+
+.pp2 img{
+    display: none;
+}
+
+.pp2:hover img{
+    display: block;
+    width: 12%;
+    position: absolute;
+    left: 25%;
+} 
+
+.pp3{
+    width: 100%;
+    line-height: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    display: flex;
+    justify-content: right;
+}
+
+.pp3 p{
+    text-align: center;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.pp3 span{
+    margin-bottom: 10px;
+}
+/*--------------------------*/
+.lat{
+    margin-top: 1.2%;
+    background-image: linear-gradient(to bottom right,  rgb(97, 154, 207) -60%, #fcfcfc 100%);
+    max-width: 25%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;    
+    font-family: .9em;
+}
+/*
+.contenido a:hover{
+    transition: all .8s;
+    
+    text-decoration: none;
+    color: rgb(251, 251, 251);
+    text-shadow: 1px 1px 2px black;
+    padding: 4%;
+    margin: 1.5%;
+    font-size: 1.5em;
+}*/
+.sol h4{
+    background-image: linear-gradient(to bottom right,  rgb(97, 154, 207) -60%, #fcfcfc 100%);
+    position: fixed;
+    top: 5%;
+    left: 2.5%;
+    color: rgb(122, 154, 188);
+    font-size: 1.5em;
+    
+}
+.sol h3{
+    padding-top: 5%;
+    
+}
+
+
+
+.sol{
+    overflow: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    margin-left: 3%
+}
+
+
+.sol div{
+    color: #777e81;
+    margin: 3% 7%;
+    padding: 3%;
+}
+.sol a span{
+    line-height: 1.5;
+}
+.sol p{
+    line-height: 1.3;
+}
+
+.lat div{
+    padding: 10%;
+    text-align: left;
+    font-size:.9em;
+    letter-spacing: 0.2px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.lat span{
+    background-color: rgb(149, 197, 228); 
+    color: rgb(120, 104, 104);
+    font-weight: bold;
+}
+
+.lat a{
+   
+    text-decoration: none;
+    color: rgb(50, 43, 43);
+}
+
+.lat h3{
+    color: aliceblue;
+    margin-top: 20%;
+    text-align: center;
+}
+
+.sol p{
+    text-align: left;
+    font-size: .8em;
+    margin-bottom: 4%;
+    color: #5e6264;
+}
+
+
+/*fondo blanco en scroll a parrafo, letra mas grande*/
+
+/*------------------------------------------------------*/
+
+.logo img{
+    width: 21%;
+    position: fixed;
+    top: 5%;
+    right: 8%;
+
+}
+
+/*-------------------------------------------------------------------------------------
+.btop{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    height: 3%;
+    background-color: brown;
+    box-shadow: 1px 1px 2px rgb(180, 180, 237);
+    background-image: linear-gradient(to bottom right,  rgb(97, 154, 207) -60%, #fcfcfc 100%); 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    
+}
+.btop a{
+    transition: all .5s;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: .6em;
+}
+
+.btop a:hover{
+    font-size: .9em;
+}
+
+.btop a span{
+    font-size: 1.5m;
+    font-weight: bolder;
+}
+/*--------------------------------------------------------------------------------------------------*/
+
+.cen{
+    font-size: .8em;
+     text-align: center;
+     margin-top: 2% ;
+    
+}
+/*--------------------------------------------------------------------------------------------------*/
+/* firma de la Direccion al final*/
+.firma p{
+    text-align: center;
+}
+/*
+.firma img{
+    position: relative;
+    width: 50px;
+    height: auto;
+    bottom: 60px;
+    left: 330px;
+    
+}*/
+.firma img{
+    position: relative;
+    max-width: 10%;
+    height: auto;
+    bottom: 60px;
+    left: 74%;
+}
+.firma a{
+    border: 1px solid black;
+    color: white;
+    background-color: #5e6264;
+}
+.firma:hover a{
+    border: 1px solid white;
+}
+/*--------------------------------------------------------------------------------------------------*/
+/*imagenes fotos*/
+.jaldo img{
+    width: 35%;
+    margin-left: 33%;
+}
+
+
+/*
+
+/*imagen*/
+
+/*volve en el scroll (sol)*/
+.back{
+    position: fixed;
+    bottom: 5%;
+    right: 27%;
+    width: 20px;
+    text-align: center;
+    z-index: 600;
+}
+.back a img{
+    width: 40px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.back a{
+    color: white;
+}
+
+.back2{
+    position: relative;
+    right: -300px;
+}
+
+/*escrito en em*/
+
+.em p{
+    font-style: italic;
+    font-size: .9em;
+}
+
+.em{
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+   
+    margin-left: 2%;
+}
+
+/*estilo de letras... la legislatura de la provincia*/
+
+
+
+/*imagen lapiz centrado
+.cen img{
+    position: relative;
+    width: 50px;
+    height: auto;
+    bottom: 60px;
+    left: 330px;
+    
+}
+
+*/
+
+/*separador (sep) de span en sumario*/
+
+
+.sep p{
+    color: black;
+    text-align: left;
+    margin-top: 10px;
+}
+
+
+/*referencia h2 orden del dia*/
+
+.sol h2{
+    text-align: center;
+    color: #777e81;
+    font-size: 1.1em;
+}
+
+/*texto grabado
+
+.grabado{
+    position: fixed;
+    left: 500px;
+    top: 200px;
+    width: 100px;
+    z-index: 2;
+    
+}
+
+.grabado h1{
+    text-align: center;
+    color: antiquewhite;
+    text-shadow: 1px 0.5px 0 #bbc1c3;
+}
+*/
+
+.categoria{
+    width: 60%;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 14 (min-content 30px max-content 200px);
+    padding-bottom: 10px;
+
+}
+
+.categoria div{  
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.porcentaje{
+    width:auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 23 (min-content 10% max-content 100%);
+    padding-bottom: 10px;
+    gap: 0;
+}
+
+.porcentaje div{
+    border: 1px solid black;
+    text-align: center;
+    width: 100%;
+    margin: 4%;
+    padding: 3%;
+}
+
+.genero{
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
+
+.varon{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.mujer{
+    grid-column: 3 / 4;
+    grid-row:  2 / 3;
+}
+
+.sustancia{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+.tabaco{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+.total{
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+}
+
+
+
+
+/*-----------------------------------------------*/
+.trescapas{
+    position: relative;
+    padding: 10%;
+    bottom: 5%;
+    width: 300px;
+    height: 200px;
+    left: 20%;
+    
+}
+.trescapas div{
+   position: absolute;
+   font-size: .8em;
+}
+
+.capa1{
+    bottom: 20%;
+    left: 20%;
+    width: 80%;
+    height: 80%;
+    background-color: #ab3030;
+    transition: all .9s;
+    border-top: 2px solid rgb(196, 184, 184);
+    border-right: 2px solid rgb(178, 174, 174);
+    border-radius: 1%;
+    display: none;
+}
+.capa1 p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    display: flex;
+    justify-content: end;
+    font-size: .9em;
+    text-align: center;
+    padding: 2%;
+    font-size: .7em;
+}
+
+.capa1:hover{
+    z-index: 300;
+    bottom: -2%;
+
+}
+
+/*----------------------/
+/segunda capa por debajo*/
+
+.capa2{
+    right: 10%;
+    width: 80%;
+    height: 80%;
+    background-color: rgb(95, 136, 155);
+    border-radius: 2%;
+}
+
+.capa2 p{
+    display: none;
+    color: white;
+    position: absolute;
+    bottom: 3%;
+    font-size: .8em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.capa2::after{
+    position: absolute;
+    bottom: 4%;
+    left: 2%;
+    color: white;
+    content: "DIRECTOR DE TAQUÍGRAFOS";
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: .4px;
+}
+/*tercera capa por delante*/
+.capa3{
+    top: 10%;
+    width: 80%;
+    height: 80%;
+    background-color: #f9f9f9;
+    box-shadow: 1px 2px 2px rgb(134, 120, 120);
+    border-radius: 2%;
+    transition: all .5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.capa3 h4{
+    margin-top: 0;
+}
+.capa3 img{
+    margin-bottom: 10%;
+    width: 30%;
+    box-shadow: 1px 2px 3px rgb(127, 122, 122);
+}
+.capa3 p{
+    width: 90%;
+    text-align: center;
+    font-size: 1em;
+    border-bottom: 1px solid rgb(155, 144, 144);
+    color: #4772b3;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.capa3 p::before{
+    content: "CONTADOR PÚBLICO NACIONAL";
+    line-break: anywhere;
+}
+.capa3:hover{
+    top: 3%;
+}
+.capa1 h6{
+    text-align: center;
+    padding: 1%;
+    border-bottom: 1px solid black;
+    color: lightgrey;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.capa1 p{
+    border: 1px solid white;
+    border-radius: 3%;
+    padding: 2%;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    color: #7dd4d6;
+    
+}
+/*cuadros de referencia*/
+.categoria1{
+    height: auto;
+    margin-left: 3%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 14 (min-content 30px max-content 200px);
+    padding-bottom: 10px;
+}
+.categoria1 div{
+    border: 1px solid black;
+    text-align: center;
+    width: 100%;
+    padding: 3%;
+}
