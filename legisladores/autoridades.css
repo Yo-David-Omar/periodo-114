@@ -1,0 +1,583 @@
+@import url(/estilosgenerales.css);
+@import url(/opciones/opcionezq.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    
+    background-color: antiquewhite;
+}
+/*imagenes*/
+.container{
+    margin: 1% 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+.container img:hover{
+    opacity: .8;
+}
+
+.container .foto{
+    min-width: 60px;
+    height: 100px;
+    line-height: 110px;
+}
+.foto img{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+.container div{
+    margin: 0 1%;
+    border: 1px solid rgb(167, 120, 120);
+}
+
+
+/*
+.fotos{
+    z-index: 100;
+    position: absolute;
+    right: 0%;
+    top: 30%;
+    display: grid;
+    width: 15%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 5 (auto);
+}
+.fotos div{
+    border-bottom: 1px solid rgb(214, 197, 197);
+    margin: 1% 0;
+    transition: all .5s;
+}
+.fotos div:hover{
+    font-size: 1.2em;
+}
+.fotos img{
+    margin-left: 10%;
+    width: 60px;
+    height: 60px;
+}
+.fotos div p{
+    text-align: left;
+    font-size: .7em;
+}
+.fotos div:hover{
+    border: 1px solid rgb(211, 203, 203);
+}
+.fotos div p a{
+    color: rgb(54, 25, 37);
+}
+/*
+.fotos1 img{
+    display: none;
+    position: fixed;
+    width: 14%;
+    left: 75%;
+    top: 3%;
+    height: 35%;
+}
+
+.fotos1:hover img{
+    display: block;
+   
+    
+}
+
+
+
+/*tamaño del libro*/
+
+.sizelibro{
+    width: 100%;
+}
+
+
+/*borde separa cargos*/
+
+.borde{
+    margin-bottom: 10px;
+    border-top: 1px solid black;
+    display: inline-block;
+    width: 20%;
+}
+
+
+/* ul:hover li ---cambia las referencias de las listas sobre lista*/
+ul:hover li{
+    
+    box-shadow: none; 
+    color: black; 
+
+}
+
+ 
+li:hover{
+    border: 1px solid rgb(126, 126, 181);
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px rgba(111, 113, 116, 0.973);
+}
+
+/*fin barra lateral-inicio barra arriba*/
+
+
+.before a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+.before{
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: lightslategray;
+    display: block;
+    float: left;
+    border: 1px solid black;
+    border-radius: 6px;
+    box-shadow: 1px 2px 2px rgb(159, 151, 240);
+    width: 100px;
+    z-index: 3;
+}
+
+
+
+/*fin barra lateral-inicio barra arriba*/
+
+
+.tituloleg{
+    height: 140px;
+    background-color:aliceblue;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    width: 100%;
+    
+}
+
+.tituloleg h2{
+    letter-spacing: 1px;
+    margin: 5px 0 0 0;
+    color: rgb(97, 154, 207);
+}
+
+.tituloleg h3{
+    margin-top: 5px;
+}
+
+.tituloleg a{
+    text-decoration: none;
+    color: black;
+    font-size: small;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.tituloleg p{
+    font-size: small;
+}
+
+.subtitulos h3 a{
+    margin-bottom: 1%;
+    color: black;
+    text-decoration: none;
+    font-size: 1.4em;
+}
+/*imagen de fondo*/
+
+.poder-leg{
+    text-align: center;
+    background-image: url(/imagenescudo/libroabierto.png);
+    background-repeat: no-repeat;
+    background-size: 70% 100%;
+    margin-left: 15%; 
+    
+    display: inline-block;
+    width: 100%;
+    height: 160vh;
+    padding: 1%;
+    
+    z-index: 2;
+}
+.poder-leg1{
+    text-align: center;
+    background-image: url(/imagenescudo/libroabierto.png);
+    background-repeat: no-repeat;
+    background-size: 70% 100%;
+    margin-left: 15%; 
+    display: inline-block;
+    width: 100%;
+    height: 160vh;
+    margin-bottom: 5%;
+    padding: 1%;
+    z-index: 2;
+}
+
+
+/*termina imagen de fondo*/
+
+/*tres libros*/
+
+
+
+.poderleg2{
+    
+    position: fixed;
+    width: 5%;
+    height: auto;
+    right: 5%;
+    top: 18%;
+    z-index: 3;
+}
+.poderleg2 img{
+    width: 100%;
+    height: auto;
+    
+}
+
+.poderleg2 img:hover{
+    padding-left: 10%;
+    transition: all .6s;
+}
+
+.poderleg2 p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center; 
+    margin-bottom:40%;
+    color: rgb(97, 154, 207);
+}
+
+.poderleg2 a{
+    text-decoration: none;
+}
+
+
+/*poder legislativo inicio*/
+
+
+.centrar{
+    position: relative;
+    top: 8%;
+    right: 15%;
+}
+
+.poder-leg h3{
+    margin-top: 2%;
+    color: black;
+}
+.poder-leg p{
+    text-align: center;
+}
+
+
+img{
+    margin: 0% 10%;
+    width: 5%;
+    height: 8%;
+}
+/*enlaces*/
+
+a{
+    text-decoration: none;
+}
+
+/*color h4 cargos*/
+
+h4{
+    color: rgb(118, 152, 170);
+    /*text-shadow: 1px 0 0 rgb(113, 106, 106);*/
+    
+    margin: 4px;
+    font-size: 18px;
+    font-family:'Arial Narrow', Arial, sans-serif;
+}
+
+/*parrafos pixeles*/
+
+.parrafos h3{
+    font-size: 17px;
+
+}
+
+p{
+    font-size: 13px;
+    margin: 4px;
+}
+
+/*titulos*/
+
+ h1{
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 2px;
+    font-size: 40px;
+    color: rgb(97, 154, 207);
+}
+
+h2{
+    color: rgb(97, 154, 207);
+    margin: 10px 0 5px 0;
+}
+
+
+
+.subtitulos h3{
+   color: black; 
+}
+
+.subtitulos h5{
+    margin: 20px;
+}
+
+
+
+
+/*footer con enlace a mandato de legisladores*/
+
+.man-ses{
+    position: fixed;
+    top: 85%;
+    bottom: 0;
+    right: 0;
+    font-size: 20px;
+    margin: 40px;
+    
+}
+
+.man-ses h6{
+    background-color: rgb(255, 255, 255);
+    border: .5px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgb(97, 154, 207);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccc;
+    font-size: 12px;
+}
+
+
+
+/*tres libros*/
+
+.poderleg2-1 img{
+    width: 60px;
+    height: auto;
+    margin-top: 35%;
+}
+
+.fechas{
+    
+    width: 100%;
+    display: flex;
+    gap: 1%;
+}
+.fechas div{
+    transition: all .5s;
+    margin: 1%;
+    padding: 2%;
+    border: 1px solid rgb(171, 162, 162);
+    margin-bottom: 5%;
+    
+}
+.fechas div a{
+    text-decoration: none;
+    text-align: center;
+    font-size: .8em;
+}
+
+.fechas:hover div{
+    box-shadow: 1px 2px 2px rgb(95, 85, 72);
+    background-color: darkcyan;
+    
+}
+.fechas:hover a{
+    color: rgb(248, 249, 250);
+}
+
+/*opciones poderes*/
+.borde2{
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 25%;
+    z-index: 400;
+}
+
+.borde2 a{
+    margin-left: 15%;
+    color: rgb(97, 154, 207);
+    text-decoration: none;
+    display: none;
+}
+.borde2:hover div a{
+    display: block;
+    border-left: 1px solid rgb(95, 95, 84);
+    
+   
+}
+.borde2 div a:hover p{
+    
+    padding-left: 10%;
+    color: rgb(97, 154, 207);
+    
+    text-shadow: 1px 1px 2px rgb(143, 122, 122);
+    border-radius: 26px;
+}
+.borde2 div p{
+
+    transition: all .5s;
+    padding: 3%;
+}
+.borde2 .bde{
+    border-bottom: 2px solid rgb(214, 199, 199);
+    margin: 1%;
+    width: 7%;
+    margin-left: 35%;
+   
+}
+.opcion2 p{
+    
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+.opcion2{
+    transition: all .5s;
+}
+.opcion2 img{
+    display: none;
+    width: 80%;
+    
+    
+}
+.opcion2 a:hover img{
+    display: block;
+    position: absolute;
+    height: 100%;
+    top: 100%;
+    
+}
+/*----------------------------------------------------*/
+.seg-parte{
+    background-image: url(/imagenescudo/libroicono.png);
+    background-size: 100% 24vh;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    width: 13%;
+    height: 25%;
+    position: fixed;
+    text-align: center;
+    top: 63%;
+    right: 1%;
+    opacity: .8;
+    
+    z-index: 600;
+}
+.seg-parte a{
+    font-size: .8em;
+    transition: all .5s;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+.seg-parte a p{
+    font-size: .8em;
+}
+.seg-parte a:hover{
+    color: cornflowerblue;
+}
+
+.seg-parte div{
+    margin-top: 20%;
+}
+/*
+@media (max-width: 780px){
+    .poder-leg{
+        margin: 20% 1% 0 0;
+        background-size: 100% 95%;
+        
+    }
+    .centrar{
+        margin-left: 30%;
+    }
+
+    ul{
+        flex-direction: row;
+        width: 100%;
+        height: 10%;
+    
+    }
+    li{
+        margin-top: 2%;
+        
+    }
+    .ocultar li{
+        right: 10%;
+        width: 100%;
+    }
+    
+    .autoridades:hover> .ocultar{
+        width: 20%;
+        height: 280px;
+        top: 80%;
+    
+    }
+    
+    .poderleg2{
+        top: 10%;
+        left: 8%;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .poderleg2 img{
+        width: 20%;
+        top: 0;
+        left: 20%;
+    }
+    .poderleg2 p{
+        position: absolute;
+        margin-left: 3%;
+        font-size: .8em;
+    }
+
+} 
+
+@media (max-width: 1024px){
+    .poder-leg{
+        background-size: 85% 60%;
+        margin-left: 15%;
+    }
+    .centrar{
+        margin-left: 15%;
+    }
+    .poderleg2{
+        width: 3%;
+        margin-right: 5%;
+    }
+    .poderleg2 p{
+        font-size: .8em;
+    }
+    
+}
+
+ */
+
+
+    
+

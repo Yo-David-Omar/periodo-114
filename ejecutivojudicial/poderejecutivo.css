@@ -1,0 +1,273 @@
+
+@import url(/opciones/opcionezq.css);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+/*-----------------------------*/
+.caja{
+    left: 0;
+    background-image: linear-gradient(to bottom right, rgb(97, 154, 207) -60%, #fcfcfc 100%);
+}
+/*-----------------------------*/
+body{
+    text-align: center;
+    height: auto;
+    width: 100%;
+    background-color: rgb(232, 230, 230);
+   /* background-image: linear-gradient(to bottom left,  rgb(97, 154, 207) -60%, #fcfcfc 100%);*/
+}
+
+.next a{
+    font-size: .9em;
+}
+
+/*titulo manzur*/
+
+.manzur h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 30px;
+    color: #85555a;
+}
+.manzur{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: rgb(97, 154, 207);   
+}
+
+.subtitulos h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(97, 154, 207); 
+    font-size: 25px;
+}
+
+.subtitulos p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.poderleg2 img{
+    width: 60px;
+    height: auto;
+    margin-top: 0px;
+}
+
+.poderleg2{
+    position: fixed;
+    width: 50px;
+    height: 200px;
+    right: 100px;
+    top: 100px;
+    z-index: 3;
+}
+
+.poderleg2 img:hover{
+    width: 50px;
+    height: auto;
+}
+
+.poderleg2 p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:large;
+    font-weight: bold;
+    text-align: center; 
+    margin-bottom: 40px;
+    color: rgb(97, 154, 207);
+}
+
+.poderleg2 a{
+    text-decoration: none;
+}
+
+
+/*poder legislativo inicio*/
+
+.poder-leg{
+    background-color: lavender;
+    padding: 5% 0;
+    margin-top: 5%;
+    border: 2px double black;
+    display: inline-block;
+    width: 60%;
+    height: auto;
+    
+    z-index: 2;
+}
+
+.poder-leg h3{
+    margin-top: 15px;
+    color: black;
+}
+
+img{
+    margin: 0px 20px;
+    width: 60px;
+    height: 80px;
+}
+/*enlaces*/
+
+a{
+    text-decoration: none;
+}
+
+/*color h4 cargos*/
+
+h4{
+    margin-top: 15px;
+    /*color: rgb(139, 185, 210);*/
+    color: #969696;
+    text-shadow: 1px 0 0 rgb(91, 85, 85);
+   
+    font-size: 18px;
+}
+
+/*parrafos pixeles*/
+
+p{
+    font-size: 13px;
+    margin: 4px;
+}
+
+/*titulos*/
+
+ h1{
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 2px;
+    font-size: 40px;
+    color: rgb(97, 154, 207);
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(97, 154, 207);
+    margin: 10px 0 5px 0;
+    letter-spacing: 1px;
+}
+
+
+
+.subtitulos h5{
+    margin: 20px;
+}
+
+/*enlace ministerio*/
+
+.irministerio{
+    position: fixed;
+    bottom: 3%;
+    right: 1%;
+    width: 20%;
+    background-color: rgb(125, 119, 90);
+    border-radius: 2px;
+   
+}
+.irministerio:hover{
+    box-shadow: 1px 2px 3px rgb(121, 113, 113);
+}
+
+.irministerio a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*--------------------------------------------------------------*/
+.borde2{
+    
+    position: fixed;
+    top: 2%;
+    left: 80%;
+    width: 20%;
+    z-index: 400;
+}
+
+.borde2 a{
+    color: rgb(181, 181, 201);
+    text-decoration: none;
+   
+}
+.borde2:hover div a{
+    display: block;
+    border-left: 1px solid rgb(224, 208, 208);
+    font-weight: bold;
+   
+}
+.borde2 div a:hover p{
+    padding-left: 10%;
+    color: rgb(253, 252, 252);
+    background-color: rgb(202, 209, 209);
+    text-shadow: 1px 1px 2px black;
+}
+.borde2 div p{
+    transition: all .5s;
+    padding: 3%;
+}
+.borde2 .bde2{
+    border-bottom: 2px solid rgb(243, 242, 242);
+    margin: 1%;
+    width: 7%;
+    margin-left: 80%;
+   
+}
+.opcion2 p{
+    
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+.opcion2{
+    transition: all .5s;
+}
+.opcion2 img{
+    height: 20%;
+    width: 90%;   
+}
+
+/*-----------------------------------------------------------------*/
+/*
+.opcion2 a:hover img{
+    display: block;
+    position: absolute;
+    height: 100%;
+    top: 100%;
+    
+}*/
+.next footer{
+    width: 30%;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 768px){
+    .poder-leg{
+        width: 60%;
+    }
+    .poder-leg h1{
+        font-size: 1.8em;
+    }
+    .poder-leg h3{
+        font-size: 1em;
+    }
+    .poder-leg h4{
+        font-size: .9em;
+    }
+    .manzur h2{
+        font-size: 1.1em;
+    }
+    .subtitulos p{
+        font-size: .6em;
+    }
+    .up-img{
+        width: 70%;
+    }
+    .borde1{
+        width: 40%;
+    }
+    .borde2 a p{
+        font-size: .9em;
+    }
+}
