@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOMOS LEGISLATURA 114PL</title>
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+   
+
+    <!------------------------------->
+    <div class="talk_me">
+        <p><i class="bi bi-whatsapp"></i>Whatsapp</p>
+        <form action="https://formspree.io/f/mwkajgrr" method="POST" id="myForm">
+          <textarea name="message" id="area" cols="40" rows="4" minlength="5" maxlength="200">escribe aquí...</textarea>
+          <button type="submit" id="submitButton" disabled>Enviar</button>
+          <p id="feedbackMessage" class="message"></p>
+      </form>
+    </div>
+        <!--<form action="">
+            <textarea name="area" cols="40" rows="4" minlength="5" maxlength="200" >escribe aqui...</textarea>
+            <button>enviar</button>
+        </form>
+    </div>-->
+<!--encabezado principal fijo -->
+    <header class="encabezado_1ro">
+                <h4> HONORABLE LEGISLATURA DE TUCUMÁN</h4>
+        <div id="clock"></div>
+    </header>
+
+
+    <section class="encabezado">
+        
+<!----------------------------
+        <ul>
+            <li><a href="/diariosesiones/cuadrosesiones.html" target="_blank"><p>Sesiones</p></a></li>
+            <li><a href="https://eltucumano.com" target="_blank"><p>noticias</p></a></li>
+            <li><a href="https://www.google.com/maps/place/Honorable+Legislatura+de+Tucum%C3%A1n/@-26.8177276,-65.2027659,2381m/data=!3m1!1e3!4m6!3m5!1s0x94225c3cddb2fff3:0x8c2825d9051ad953!8m2!3d-26.8177276!4d-65.2027659!16s%2Fg%2F1tf66kl7?entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank"><p>ubicación</p></a></li>
+            <li><a href="../legisladores/digesto.html"><p>historia</p></a></li>
+            <li><a href="../opciones/nuevo.html"><p>resumen</p></a></li>
+        
+         barra opcional referencias
+            <li>-->
+               
+                  
+            
+            <!--<div class="borde1"><a href="../opciones/nuevo.html">¿QUÉ ES UN TOMO LEGISLATIVO?</a>
+        
+                <div class="opcion">
+                <div class="informacion">
+                    <div><p>Es la Actividad Legislativa durante Un Año denominado PERÍODO LEGISLATIVO</p></div>
+                <div>
+                    <p>Esta Página Web del DIARIO DE SESIONES incluye imágenes, sonidos, videos, fotos. <br>Todo ello permite al usuario legislativo: navegar, interactuar e informarse. <br>
+                    Fruto de los Diarios de Sesiones surge también la información del: </p>
+                </div>   
+                <div>
+                    <p><ins>PODER EJECUTIVO Y PODER JUDICIAL.</ins> Principalmente las Autoridades y Mandatos.</p>
+                </div>   
+                <div>      
+                    <p> <ins>ÍNDICE TEMÁTICO:</ins> Se trata de un Índice en el cual se agrupan los proyectos que tienen características similares. <br>
+                        Por ejemplo, proyectos relacionados con los temas: Salud, Energía, Educación, Seguridad, Turismo, Rutas, Comisiones, Producción, entre otros. <br> Dentro de estos temas, contiene subtemas, como por ejemplo, en <ins>Educación:</ins>Creación o reparación de establecimientos educacionales, leyes relacionadas con temas educativos, etc.
+                    En síntesis, es la Organización del Contenido Legislativo.</p>
+                    
+                </div>   
+                <div>                
+                    <p> <strong>NOMENCLADOR</strong><br> Es un índice por Autores comprendiendo los proyectos presentados por cada Legislador y el Poder Ejecutivo. <br>Debates en lo que el mismo participó, designación en Mesa Directiva o Comisiones, dictámenes que haya suscripto, homenajes y manifestaciones realizadas, con las respectivas páginas en los Diario de Sesiones.</p>
+                </div>   
+                <div>                   
+                    <p> <strong>CUADRO DE LEYES Y VETOS </strong> <br> Comprende todos los proyectos de ley sancionados por la H. Legislatura, promulgados  y/o vetados por el Poder Ejecutivo en cada Período Legislativo.</p>
+                </div> 
+                <div>
+                    <a href="../opciones/nuevo.html">Más Info ▼</a>
+                </div>
+                </div> 
+            </div> 
+                
+            </div>
+            </li>
+    </ul>-->
+    
+    <nav class="navbar navbar-expand-lg navbar-light color-bg-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="https://legislaturadetucuman.gob.ar/sesiones" target="_blank">Sesiones</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav w-100 d-flex justify-content-between">
+              <a class="nav-link active flex-fill text-center text-light" aria-current="page" href="https://eltucumano.com" target="_blank">Noticias</a>
+              <a class="nav-link active flex-fill text-center text-light" href="https://www.google.com/maps/place/Honorable+Legislatura+de+Tucum%C3%A1n/@-26.8177276,-65.2027659,2381m/data=!3m1!1e3!4m6!3m5!1s0x94225c3cddb2fff3:0x8c2825d9051ad953!8m2!3d-26.8177276!4d-65.2027659!16s%2Fg%2F1tf66kl7?entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Ubicación</a>
+              <a class="nav-link active flex-fill text-center text-light" href="#">Resumen</a>
+            
+                <!--boton modal -->
+<button type="button" class="btn btn-primary bg-primary-subtle text-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    ¿QUÉ ES UN PERÍODO LEGISLATIVO?
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="true" data-bs-keyboard="false"  tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Información</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body size-modal bg-primary-subtle text-dark">
+          ...<h4><strong>PERÍODO LEGISLATIVO</strong></h4>
+          <h5>Se denomina así a Un Año de Actividad Legislativa, desde el 01/03 <em>(Art. 52 de la Constitución de la Provincia)</em> al 28/02 del próximo año.</h5>
+          <h5>Esta PÁGINA WEB del DIARIO DE SESIONES abarca la información de cada uno de los Períodos Legislativos e incluye gráficos, sonidos, videos y fotos. </h5>
+            <h5>De un promedio de 5000 páginas de papel, suma de los Diarios de Sesiones e información complementaria para un (1) Período Legislativo, que los usuarios debían consultar en 5 ó 6 Tomos físicos, ahora lo pueden hacer a través de <strong>un simple clickeo,</strong> con un navegador web, pudiendo interactuar e informarse. <h5>
+            <h5><ins>El PODER LEGISLATIVO</ins> comprende desde sus Diarios de Sesiones, Autoridades, Legisladores, Bloques Políticos, Comisiones, para continuar con el Índice Temático, Nomenclador, Cuadro de Leyes y Vetos del Poder Ejecutivo.</h5>
+
+            <!--
+            <h5> <ins>Índice Temático:</ins> Se trata de un Índice en el cual se agrupan los proyectos que tienen características similares. <br>
+                Por ejemplo, proyectos relacionados con los temas: Salud, Energía, Educación, Seguridad, Turismo, Rutas, Comisiones, Producción, entre otros. <br> Dentro de estos temas, contiene subtemas, como por ejemplo, en <strong>Educación:</strong> Creación o reparación de establecimientos educacionales, leyes relacionadas con temas educativos, etc.<br>
+            En síntesis, el Índice Temático es la organización del Contenido Legislativo.</h5>
+            <h5> <ins>Nomenclador</ins><br> Es un índice por Autores comprendiendo los proyectos presentados por cada Legislador y el Poder Ejecutivo. <br>Debates en lo que el mismo participó, designación en Mesa Directiva o Comisiones, dictámenes que haya suscripto, homenajes y manifestaciones realizadas, con las respectivas páginas en los Diarios de Sesiones.</h5>
+            <h5> <ins>Cuadro de Leyes y Vetos</ins> <br> Comprende todos los proyectos de ley sancionados por la H. Legislatura, promulgados  y/o vetados por el Poder Ejecutivo en cada Período Legislativo.</h5>-->
+            
+            <h5>Del esencial <strong>Diario de Sesiones</strong> surge también la información del: </h5>
+            <h5><ins>PODER EJECUTIVO Y PODER JUDICIAL.</ins><br> Principalmente las Autoridades, Mandatos y Estructuras de los organismos.</h5>
+            <a href="../opciones/nuevo.html"><h4>Ver Gráfico Informativo ▼</h4></a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar ventana</button>
+        </div>
+      </div>
+    </div>
+  </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+    </section>
+    <div class="logolegislatura"><a href="../ainicio/inicio.html">
+        <img src="../imagenescudo/logo2024sinletras.png" alt="logo legislatura de Tucumán" title="HONORABLE LEGISLATURA DE TUCUMÁN">
+    </a>
+    </div>
+
+    
+    <div class="img_tomos">
+        <div class="titulo_tomos">
+            <h3>Períodos <br> Legislativos</h3>
+    </div>
+    
+
+<!--Carousel de imagenes
+    <div id="carouselExampleCaptions" class="carousel slide top-carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 7"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../imagenescudo/librotomo119.png" class="d-block mx-auto imagen-carousel" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Tomo 120</h2>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../imagenescudo/librotomo118.png" class="d-block mx-auto imagen-carousel" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Tomo 120</h2>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../imagenescudo/librotomo118.png" class="d-block mx-auto imagen-carousel" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Tomo 120</h2>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../imagenescudo/librotomo118.png" class="d-block mx-auto imagen-carousel" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Tomo 120</h2>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../imagenescudo/librotomo118.png" class="d-block mx-auto imagen-carousel" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Tomo 120</h2>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../imagenescudo/librotomo118.png" class="d-block mx-auto imagen-carousel" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Tomo 120</h2>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../imagenescudo/librotomo118.png" class="d-block mx-auto imagen-carousel" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Tomo 120</h2>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../imagenescudo/librotomo118.png" class="d-block mx-auto imagen-carousel" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Tomo 120</h2>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+------------------------------------------>
+<div class="drop-tomos vh-100">
+  <!-- Primer Dropdown -->
+  <div class="dropdown m-3">
+      <a class="btn btn-secondary dropdown-toggle color-drop" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="showImage('img120')">
+       Período 120
+      </a>
+      <ul class="dropdown-menu dropdown-menu-dark">
+          <li><a class="dropdown-item" href="../diariosesiones/cuadrosesiones.html">Autoridades</a></li>
+          <li><a class="dropdown-item" href="#">Índice Temático</a></li>
+          <li><a class="dropdown-item" href="#">Nomenclador</a></li>
+          <li><a class="dropdown-item" href="#">Cuadro de Leyes</a></li>
+          <li><a class="dropdown-item" href="#">Diario de Sesiones</a></li>
+          <li><a class="dropdown-item" href="#">Cuadro Asuntos</a></li>
+          <li><a class="dropdown-item" href="#">Inicio</a></li>
+      </ul>
+  </div>
+
+  <!-- Segundo Dropdown -->
+  <div class="dropdown m-3">
+      <a class="btn btn-secondary dropdown-toggle color-drop" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="showImage('img119')">
+       Período 119
+      </a>
+      <ul class="dropdown-menu dropdown-menu-dark">
+          <li><a class="dropdown-item" href="../diariosesiones/cuadrosesiones.html">Autoridades</a></li>
+          <li><a class="dropdown-item" href="#">Índice Temático</a></li>
+          <li><a class="dropdown-item" href="#">Nomenclador</a></li>
+          <li><a class="dropdown-item" href="#">Cuadro de Leyes</a></li>
+          <li><a class="dropdown-item" href="#">Diario de Sesiones</a></li>
+          <li><a class="dropdown-item" href="#">Cuadro Asuntos</a></li>
+          <li><a class="dropdown-item" href="#">Inicio</a></li>
+      </ul>
+  </div>
+
+  <!-- Tercer Dropdown -->
+  <div class="dropdown m-3">
+      <a class="btn btn-secondary dropdown-toggle color-drop" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="showImage('img118')">
+       Período 118
+      </a>
+      <ul class="dropdown-menu dropdown-menu-dark">
+          <li><a class="dropdown-item" href="../diariosesiones/cuadrosesiones.html">Autoridades</a></li>
+          <li><a class="dropdown-item" href="#">Índice Temático</a></li>
+          <li><a class="dropdown-item" href="#">Nomenclador</a></li>
+          <li><a class="dropdown-item" href="#">Cuadro de Leyes</a></li>
+          <li><a class="dropdown-item" href="#">Diario de Sesiones</a></li>
+          <li><a class="dropdown-item" href="#">Cuadro Asuntos</a></li>
+          <li><a class="dropdown-item" href="#">Inicio</a></li>
+      </ul>
+  </div>
+
+  <!-- Cuarto Dropdown -->
+  <div class="dropdown m-3">
+      <a class="btn btn-secondary dropdown-toggle color-drop" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="showImage('img117')">
+       Período 117
+      </a>
+      <ul class="dropdown-menu dropdown-menu-dark">
+          <li><a class="dropdown-item" href="../diariosesiones/cuadrosesiones.html">Autoridades</a></li>
+          <li><a class="dropdown-item" href="#">Índice Temático</a></li>
+          <li><a class="dropdown-item" href="#">Nomenclador</a></li>
+          <li><a class="dropdown-item" href="#">Cuadro de Leyes</a></li>
+          <li><a class="dropdown-item" href="#">Diario de Sesiones</a></li>
+          <li><a class="dropdown-item" href="#">Cuadro Asuntos</a></li>
+          <li><a class="dropdown-item" href="#">Inicio</a></li>
+      </ul>
+  </div>
+
+  <!-- Quinto Dropdown -->
+  <div class="dropdown m-3">
+      <a class="btn btn-secondary dropdown-toggle color-drop" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="showImage('img116')">
+       Período 116
+      </a>
+      <ul class="dropdown-menu dropdown-menu-dark">
+          <li><a class="dropdown-item" href="../diariosesiones/cuadrosesiones.html">Autoridades</a></li>
+          <li><a class="dropdown-item" href="#">Índice Temático</a></li>
+          <li><a class="dropdown-item" href="#">Nomenclador</a></li>
+          <li><a class="dropdown-item" href="#">Cuadro de Leyes</a></li>
+          <li><a class="dropdown-item" href="#">Diario de Sesiones</a></li>
+          <li><a class="dropdown-item" href="#">Cuadro Asuntos</a></li>
+          <li><a class="dropdown-item" href="#">Inicio</a></li>
+      </ul>
+  </div>
+
+  <!-- Sexto Dropdown -->
+  <div class="dropdown m-3">
+      <a class="btn btn-secondary dropdown-toggle color-drop" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="showImage('img115')">
+       Período 115
+      </a>
+      <ul class="dropdown-menu dropdown-menu-dark">
+        <li><a class="dropdown-item" href="../legisladores/autoridades.html">Autoridades</a></li>
+        <li><a class="dropdown-item" href="../informacion/indicetematico.html">Índice Temático</a></li>
+        <li><a class="dropdown-item" href="../informacion/nomenclador.html">Nomenclador</a></li>
+        <li><a class="dropdown-item" href="../informacion/cuadrodeleyes.html">Cuadro de Leyes</a></li>
+        <li><a class="dropdown-item" href="../diariosesiones/cuadrosesiones.html">Diario de Sesiones</a></li>
+        <li><a class="dropdown-item" href="../diariosesiones/buscadorasuntos.html">Cuadro Asuntos</a></li>
+        <li><a class="dropdown-item" href="../ainicio/inicio.html">Inicio</a></li>
+    </ul>
+  </div>
+
+  <!-- Séptimo Dropdown -->
+  <div class="dropdown m-3">
+      <a class="btn btn-secondary dropdown-toggle color-drop" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="showImage('img114')">
+       Período 114
+      </a>
+      <ul class="dropdown-menu dropdown-menu-dark">
+          <li><a class="dropdown-item" href="../legisladores/autoridades.html">Autoridades</a></li>
+          <li><a class="dropdown-item" href="../informacion/indicetematico.html">Índice Temático</a></li>
+          <li><a class="dropdown-item" href="../informacion/nomenclador.html">Nomenclador</a></li>
+          <li><a class="dropdown-item" href="../informacion/cuadrodeleyes.html">Cuadro de Leyes</a></li>
+          <li><a class="dropdown-item" href="../diariosesiones/cuadrosesiones.html">Diario de Sesiones</a></li>
+          <li><a class="dropdown-item" href="../diariosesiones/buscadorasuntos.html">Cuadro Asuntos</a></li>
+          <li><a class="dropdown-item" href="../ainicio/inicio.html">Inicio</a></li>
+      </ul>
+  </div>
+</div>
+
+<!-- Contenedor para la imagen que se mostrará a la derecha -->
+<div class="image-container">
+  <img id="img120" src="../imagenescudo/librotomo119.png" alt="Imagen Período 120">
+  <img id="img119" src="../imagenescudo/librotomo119.png" alt="Imagen Período 119">
+  <img id="img118" src="../imagenescudo/librotomo118.png" alt="Imagen Período 118">
+  <img id="img117" src="../imagenescudo/librotomo117.png" alt="Imagen Período 117">
+  <img id="img116" src="../imagenescudo/librotomo116.png" alt="Imagen Período 116">
+  <img id="img115" src="../imagenescudo/librotomo115.png" alt="Imagen Período 115">
+  <img id="img114" src="../imagenescudo/librotomo114.png" alt="Imagen Período 114">
+</div>
+
+<!--
+        <div class="nav_var">
+            <nav>
+                <a href="#"><button><span>Tomo 120<img src="../imagenescudo/librotomo119.png" alt=""></span></button></a>
+                <a href="#"><button><span>Tomo 119<img src="../imagenescudo/librotomo119.png" alt=""></span></button></a>
+                <a href="#"><button><span>Tomo 118<img src="../imagenescudo/librotomo118.png" alt=""></span></button></a>
+                <a href="#"><button><span>Tomo 117<img src="../imagenescudo/librotomo117.png" alt=""></span></button></a>
+                <a href="#"><button><span>Tomo 116<img src="../imagenescudo/librotomo116.png" alt=""></span></button></a>
+                <a href="../legisladores/autoridades.html"><button><span>Tomo 115<img src="../imagenescudo/librotomo115.png" alt=""></span></button></a>
+                <a href="../legisladores/autoridades.html"><button><span>Tomo 114<img src="../imagenescudo/librotomo114.png" alt=""></span></button></a>
+               
+            </nav>
+        </div>-->
+        
+        
+        
+            <!--
+             <ul>
+                    <li><a href=""><p>Tomo 119</p></a></li>
+                    <li><a href="">Tomo 118</a></li>
+                    <li><a href=""><p>Tomo 117</p></a></li>
+                    <li><a href="">Tomo 116</a></li>
+                    <li><a href=""><p>Tomo 115</p></a></li>
+                    <li><a href="">Tomo 114</a></li>
+                    <li><a href=""><p>Tomo 113</p></a></li>
+                    <li><a href="">Tomo 112</a></li>
+                </ul>
+            <nav>
+                <a href=""><img src="../imagenescudo/librotomo113.png"><h4>tomo 113</h4></a>
+                <a href=""><img src="../imagenescudo/librotomo114.png"><h4>tomo 114</h4></a>
+                <a href=""><img src="../imagenescudo/librotomo115.png"><h4>tomo 115</h4></a>
+                <a href=""><img src="../imagenescudo/librotomo116.png"><h4>tomo 116</h4></a>
+                <a href=""><img src="../imagenescudo/librotomo117.png"><h4>tomo 117</h4></a>
+                <a href=""><img src="../imagenescudo/librotomo118.png"><h4>tomo 118</h4></a>
+                <a href=""><img src="../imagenescudo/librotomo119.png"><h4>tomo 119</h4></a>
+            </nav>-->
+    
+    <!--prueba carrousel
+    <div class="centrar">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <a href="#"><p>TOMO <br>119°</p><img src="/imagenescudo/librotomo114.png" alt="Imagen 1"></a>
+                <a href="#"><p>TOMO <br>118°</p><img src="/imagenescudo/librotomo114.png" alt="Imagen 2"></a>
+                <a href="#"><p>TOMO <br>117°</p><img src="/imagenescudo/librotomo114.png" alt="Imagen 3"></a>
+                <a href="#"><p>TOMO <br>116°</p><img src="/imagenescudo/librotomo114.png" alt="Imagen 3"></a>
+                <a href="#"><p>TOMO <br>115°</p><img src="/imagenescudo/librotomo114.png" alt="Imagen 3"></a>
+                <a href="#"><p>TOMO <br>114°</p><img src="/imagenescudo/librotomo114.png" alt="Imagen 3"></a>
+                <a href="#"><p>TOMO <br>113°</p><img src="/imagenescudo/librotomo114.png" alt="Imagen 3"></a>
+                <a href="#"><p>TOMO <br>112°</p><img src="/imagenescudo/librotomo114.png" alt="Imagen 3"></a>
+            </div>
+            <button class="prev">‹</button>
+            <button class="next">›</button>
+        </div>
+    </div>
+     -->
+
+<!--
+    <picture>
+            <div class="imagenprincipal">
+                <img src="/imagenescudo/primerimagen.jpg" alt="Imagen 1">
+                <img src="/imagenescudo/antiguaoficce.jpg" alt="Imagen 2" class="imagen-oficina">
+                <img src="/imagenescudo/libro digital.jpg" alt="Imagen 3">
+            </div>
+    </picture>-->
+<!--
+    <picture class="logolegislatura">
+        <img src="/imagenescudo/hldavid.png" alt="">
+   
+        <div class="imagenprincipal">
+            <img src="/imagenescudo/primerimagen.jpg" alt="">
+        </div>
+        <div class="imagenprincipal1">
+            <img src="/imagenescudo/antiguaoficce.jpg" alt="">
+        </div>
+        <div class="imagenprincipal2">
+            <img src="/imagenescudo/banquetas.jpeg" alt="">
+        </div>
+        <div class="imagenprincipal3">
+            <img src="/imagenescudo/libro y computadora.jpg" alt="">
+        </div>
+    </picture>
+  -->  
+    <!--
+    <div class="fondocolor">
+       <div class="cuadrotomo">
+        <div><a href="#">
+            <h3>TOMO 119°</h3>
+            <p>11/08/2019</p>
+        </a></div>
+        <div><a href="#">
+            <h3>TOMO 118°</h3>
+            <p>11/08/2019</p>
+        </a></div>
+        <div><a href="#">
+            <h3>TOMO 117°</h3>
+            <p>11/08/2019</p>
+        </a></div>
+        <div><a href="#">
+            <h3>TOMO 116°</h3>
+            <p>11/08/2019</p>
+        </a></div>
+        <div><a href="#">
+            <h3>TOMO 115°</h3>
+            <p>11/08/2019</p>
+        </a></div>
+        <div><a href="#">
+            <h3>TOMO 114°</h3>
+            <p>11/08/2019</p>
+        </a></div>
+        <div><a href="#">
+            <h3>TOMO 113°</h3>
+            <p>11/08/2019</p>
+        </a></div>
+        <div><a href="#">
+            <h3>TOMO 112°</h3>
+            <p>11/08/2019</p>
+        </a></div>
+       </div>-->
+       <footer class="primerpie_pag">
+        <ul>
+            <li><a href="https://www.instagram.com/legislaturatucuman?igsh=MTJ2cm1ubG9heXozOA"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=61552602646020"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="https://x.com/LegislaturaT?t=iHA1doB8nLAUovEn8SL4Q&s=09"><i class="bi bi-twitter-x"></i></a></li>
+            <li><a href="https://wa.me/5493816114185" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCAAEMVW-oPg4FnIYBNfjVCQ" target="_blank"><i class="bi bi-youtube"></i></a></li>
+        </ul>
+     </footer>
+     <footer class="segunpie_pag">
+        <ul>
+            <h4>Mandatos</h4>
+            <li><a href="#">Acerca de...</a></li>
+            <li><a href="#">Sección Electoral</a></li>
+            <li><a href="#">Departamentos</a></li>
+            <li><a href="#">Legisladores</a></li>
+            <li><a href="#">Artículo 43</a></li>
+        </ul>
+        <ul>
+            <h4>Bloques Políticos</h4>
+            <li><a href="#">Acerca de...</a></li>
+            <li><a href="#">Períodos</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+        <ul>
+            <h4>Comisiones</h4>
+            <li><a href="#">Permanentes</a></li>
+            <li><a href="#">Interpoderes</a></li>
+            <li><a href="#">Especiales</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+        <ul>
+            <h4>Constitución Provincial</h4>
+            <li><a href="#">Leyes</a></li>
+            <li><a href="#">Vetos</a></li>
+            <li><a href="#">Legisladores</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+     </footer>
+     <footer class="tercerpie_pag">
+        <a href="#">&copy;Estrategias_Páginas_JD</a>
+     </footer>
+    
+ <script src="inicio.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
