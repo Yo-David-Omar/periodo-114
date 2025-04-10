@@ -1,0 +1,501 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*lineas en la esquina
+.lineas{
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-around;
+    left: 70%;
+
+}
+*/
+
+.borde1{
+    
+    position: absolute;
+    top: 1%;
+    left: 60%;
+    width: 25%;
+    z-index: 4;
+}
+
+.borde1 a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.borde1:hover .informacion{
+    display: block;
+}
+.borde1:hover div a{
+    display: block;
+    border-left: 1px solid rgb(222, 213, 213);
+    border-radius: -24px;
+   
+}
+.borde1 div a:hover p{
+    padding-left: 12%;
+    color: white;
+    background-color: cadetblue;
+}
+.borde1 div p{
+    transition: all .5s;
+    padding: 3%;
+}
+.borde1 .bde{
+    border-bottom: 2px solid black;
+    margin: 1%;
+    width: 7%;
+    margin-left: 35%;
+   
+}
+
+
+/*
+.borde1{
+    top: 40%;
+    left: 30%;
+    position: relative;
+    width: 25%;
+}
+.borde1:hover div a{
+    display: block;
+    margin: 4%;
+    
+}
+.borde1 div p{
+    padding: 3%;
+}
+.borde1 .bde{
+    border-bottom: 2px solid black;
+    margin: 1%;
+    width: 7%;
+    margin-left: 35%;
+    
+}
+*/
+/*java opciones*/
+#titulo{
+    display: none;
+}
+
+.titulofijo{
+    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    color: blanchedalmond;
+    height: 30px;
+    width: 100%;
+    position: fixed;
+    background-color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8em;
+    z-index: 2;
+}
+/*
+.titulofijo a{
+    display: none;
+    margin: 20px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.titulofijo ul{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px;
+}
+
+.titulofijo li{
+    list-style-type: none;
+}
+/*libros opciones*/
+.cajaopciones{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 2%;
+    margin: 1%;
+    z-index: 3;
+    width: 52%;
+}
+
+.cajaopciones div{
+    margin-top: 1.5%; 
+}
+
+
+.cajaopciones img{
+    transition: all .6s;
+
+   
+     
+}
+/*.cajaopciones span{
+    position: absolute;
+    transition: all 4s;
+    width: 100%;
+}*/
+
+.lomodeunlibro span a{
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    width: 100%;
+    text-decoration: none;
+    color: rgb(173, 185, 185);
+    transition: all .8s;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.cajaopciones span{
+    display: none;
+}
+.cajaopciones .lomodeunlibro:hover span{
+    display: block;
+}
+
+.cajaopciones span:hover a{
+    padding: 0.5%;
+    color: brown;
+    width: 100%;
+    border-radius: 20px;
+    padding-left: 20%;
+    background-color: aliceblue;
+}
+
+
+.cajaopciones:hover img{
+    
+    
+    transition: all .6s;
+}
+
+
+.cajaopciones img:hover{
+    width: 5%;
+    
+}
+
+    
+   
+/*----------------------------------------------------------------------------------------------------*/
+
+
+.honorable{
+    color: rgb(129, 180, 225);
+    position: fixed;
+   
+    top: 70px;
+    left: 25px;
+   
+    font-size: 70px;
+    
+}
+.honorable1{
+    color: white;
+    position: absolute;
+    left: 20px; 
+    top: 50px;
+    font-size: 70px;   
+    
+}
+
+/*imagen de fondo*/
+.imagenfondo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.imagenfondo img{
+    width: 100%;
+    height: 100%;
+}
+/*----------------------------------------------------------------------------------------------*/
+
+
+
+.cajaopciones{ 
+    transition: all .6s;
+
+}
+.cajaopciones img{
+    
+    transition: all .6s;
+    width: 3.8%;
+    margin-top: .2%;
+}
+
+
+picture{
+    transition: all .6s;
+}
+
+
+
+.cajaopciones{
+    width: 100%;  
+}
+
+.cajaopciones button{
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+    opacity: .8;
+    transition: all .5s;
+    border: none;
+    background-color: rgb(245, 204, 20);
+}
+
+.cajaopciones button span{
+    color: black;
+    font-weight: bold;
+}
+.cajaopciones button span:hover{
+    border: 1px solid rgb(244, 236, 236);
+}
+
+#titulo button{
+    position: absolute;
+    top: -3%;
+    width: 60%;
+    background-color: brown;
+    border: none;
+}
+
+#titulo button a{
+    flex-direction: row;
+    margin: 2% 5% 0 0;
+    text-decoration: none;
+    color: blanchedalmond;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button span{
+    font-size: 1em;
+    padding: 1%;
+    font-style: italic;
+
+}
+
+.lomodeunlibro div p{
+    display: none;
+    position: absolute;
+    width: 20%;
+    font-size: .8em;
+    text-decoration: none;
+    font-style: italic;
+    background-color: rgb(245, 204, 20);
+    padding: 1%;
+    opacity: .7;
+    margin-left: 4%;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.lomodeunlibro:hover p{
+    display: block;
+}
+.lomodeunlibro div p a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+
+
+
+/*--------------------------VIDEOS------------------------------*/
+
+.tresvideos{
+    position: absolute;
+    width: 13%;
+    right: 4%;
+    top: 0%;  
+}
+
+.tresvideos div{
+    margin-top: 10%;
+}
+
+.tresvideos p{
+    background-color: darkgray;
+    border: 1px solid rgb(82, 75, 75);
+    padding: 2%;
+    text-align: center;
+    opacity: .4;
+}
+
+.tresvideos p a{
+    color: black;
+    text-decoration: none;
+    text-shadow: 1px 2px 2px white;
+}
+
+.tresvideos a:hover{
+    text-decoration-line: underline;  
+}
+
+#uno{
+    width: 100%;
+}
+
+#dos{
+    width: 100%;
+}
+
+#tres{
+    width: 100%;
+}
+
+/*parte informativa lado derecho de la pantalla*/
+
+.informacion{
+    display: none;
+    background-color: rgb(245, 204, 20);
+    position: fixed;
+    width: 20%;
+    height: 300px;
+    top: 4%;
+    right: 18%;
+    transition: all 1s;
+    overflow: auto;
+    border-left: 4px solid yellow;
+}
+.informacion:hover{
+    
+    height: 300px;
+}
+.informacion div{
+    overflow: hidden;
+    max-height: 100%;
+    width: calc(90% + 18px);
+}
+.informacion::-webkit-scrollbar{
+    scroll-behavior: smooth;
+}
+.informacion div a{
+    width: 100%;
+    border: 1px solid rgb(62, 62, 55);
+    text-align: center;
+    color: black;
+}
+.informacion div:hover a{
+    background-color: black;
+    color: white;
+}
+.informacion p{
+    color: rgb(142, 136, 136);
+    padding: 1%;
+    margin-bottom: 2%;
+    margin-right: 5px;
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: .9em;
+}
+
+
+.informacion:hover span{
+    color: red;
+}
+.informacion strong{
+    border-bottom: 1px solid darkblue;
+    color: chocolate;
+}
+.informacion:hover div p strong{
+    border-bottom: 1px solid white;
+    
+}
+ 
+
+/*codigo de remix icon*/
+.ri-arrow-down-circle-line{
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+@media only screen and (min-width: 300px) and (max-width: 768px){
+    .titulofijo{
+        height: 8%;
+    }
+    .tresvideos{
+        position: absolute;
+        top: 100%;
+        left: 4%;
+        width: 90%;  
+    }
+
+    .tresvideos p{
+        color: white;
+        margin-top: -5%;
+        opacity: .6;
+    }
+  
+    .tresvideos video{
+        display: none;
+    }
+    .cajaopciones button{
+        left: 4%;
+        font-size: .7em;
+        
+    }
+    .lomodeunlibro div{
+        display: flex;
+        flex-direction: column;
+       
+        margin-top: 5%;
+        margin-left: 0;
+    }
+    .lomodeunlibro div p{
+        font-size: .7em;
+        padding: .3%;
+    }
+    #titulo button{
+        width: 100%;
+        margin-right: 0;
+        left: 0;
+        top: 0;
+    }
+    #titulo button a{
+        font-size: .8em;
+    }
+    .cajaopciones img{
+        display: none;
+    }
+    .cajaopciones{
+        height: 50%;
+    }
+    .borde1{
+        top: 6%;
+        left: 87%;
+    }
+    .borde1 .opcion{
+        top: 30%;
+    }
+    .borde1 .opcion a{
+        margin-top: 20%;
+        width: 60%;
+        font-size: .8em;
+    }
+   
+}

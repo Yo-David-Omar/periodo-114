@@ -1,0 +1,1264 @@
+@import url(/estilosgenerales.css);
+@import url(/opciones/opcionezq.css);
+@import url('https://fonts.googleapis.com/css2?family=Meie+Script&family=Parisienne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=UnifrakturMaguntia&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: antiquewhite;
+}
+/*---------------------------------------*/
+
+
+.cuadrocolor{
+    background-color: white;
+    position: fixed;
+    top: 3%;
+    right: 0;
+    width: 25%;
+    height: 200px;
+    
+}
+.cuadrocolor div{
+    padding: 3%;
+}
+
+
+.slider-container {
+    width: 100%; /* Ajusta el ancho según lo necesites */
+    height: 175px; /* Ajusta el alto según lo necesites */
+    overflow: hidden;
+    max-height: 100%;
+    
+    
+}
+
+.slider-container img {
+    border-radius: 2%;
+    width: 90%;
+    height: auto;
+    display: none;
+}
+
+
+
+/*---------------------------------*/
+.trespartes{
+    margin: 8% 0 0 17%;
+    display: grid;
+    width: 50%;
+    grid-template-columns: 35% 30% 40%;
+    grid-template-rows: 3;
+    font-family:'Times New Roman', Times, serif;
+    font-size:medium;
+    font-weight:normal;
+   
+}
+.trespartes div{
+    background-color: rgb(236, 244, 247);
+    padding: 3%;
+    border: 1px solid black;
+    
+}
+
+.bordeuno{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: .8em;
+    text-align:center;
+    place-items: center;
+    font-weight:bold;
+    line-height: 1.5;
+    color:rgb(97, 154, 207);
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+.trespartes .bordedos span{
+    transition: all .5s;
+}
+.bordedos{
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
+.bordedos span:hover{
+    margin-left: 3%;
+    padding-left: 1%;
+    color: #131212;
+    text-shadow: 1px 2px 3px rgb(54, 27, 27);
+}
+.ultimo{
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: .7em;
+    line-height: 1.4;
+    transition: all .5s;
+}
+.ultimo:hover{
+    background-color: darkblue;
+    color: white;
+    font-size: .8em;
+    cursor: ew-resize;
+}
+.ultimo1{
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: .7em;
+    line-height: 1.4;
+    transition: all .5s;
+}
+.ultimo2{
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: .7em;
+    line-height: 1.4;
+    transition: all .5s;
+}
+.ultimo1:hover{
+    background-color: darkblue;
+    color: white;
+    font-size: .8em;
+    cursor: ew-resize;
+}
+.ultimo2:hover{
+    background-color: darkblue;
+    color: white;
+    font-size: .8em;
+   
+}
+.bordeuno1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: .8em;
+    text-align:center;
+    place-items: center;
+    font-weight:bold;
+    line-height: 1.5;
+    color:rgb(97, 154, 207);
+    grid-column: 1 / 2 ;
+    grid-row: 1 / 4;
+}
+.bordeuno2{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: .8em;
+    text-align:center;
+    place-items: center;
+    font-weight:bold;
+    line-height: 1.5;
+    color:rgb(97, 154, 207);
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+}
+.vacio{
+    grid-column: 2 / 3;
+    grid-row: 2 / 5;
+}
+/*----------------------------------------------*/
+
+.tresp{
+    margin: 8% 0 0 17%;
+    display: grid;
+    width: 50%;
+    grid-template-columns: 35% 30% 40%;
+    grid-template-rows: 6;
+    font-family:'Times New Roman', Times, serif;
+    font-size:medium;
+    font-weight:normal;
+   
+}
+.tresp div{
+    background-color: rgb(236, 244, 247);
+    padding: 3%;
+    border: 1px solid black;
+    
+}
+
+.b1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: .8em;
+    text-align:center;
+    place-items: center;
+    font-weight:bold;
+    line-height: 1.5;
+    color:rgb(97, 154, 207);
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+}
+.tresp .b2 span{
+    transition: all .5s;
+}
+.b2{
+    grid-column: 2 / 4;
+    
+}
+.b2 span:hover{
+    margin-left: 3%;
+    padding-left: 1%;
+    color: #131212;
+    text-shadow: 1px 2px 3px rgb(54, 27, 27);
+}
+.b3{
+    grid-row: 2 / 5;
+}
+.ult{
+    grid-column: 1 / 4;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: .7em;
+    line-height: 1.4;
+    transition: all .5s;
+}
+.ult:hover{
+    background-color: darkblue;
+    color: white;
+    font-size: .8em;
+    cursor: ew-resize;
+}
+/*----------------------------------------------*/
+.recepcion{
+    margin: 8% 0 0 17%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 35% 30% 40%;
+    grid-template-rows: 26 (min-content 10% max-content 40%);
+    
+}
+.recepcion div{
+    background-color: rgb(236, 244, 247);
+    border: .5px solid #8f8f8f;
+    padding: 6px;
+    display: flex;
+    justify-content:left;
+}
+
+.recepcion div span{
+    transition: all .5s;
+}
+
+.recepcion div:hover span{
+    margin-left: 3%;
+    padding-left: 1%;
+    color: #131212;
+    text-shadow: 1px 2px 3px rgb(54, 27, 27);
+}
+
+.primero{
+    grid-row: 1 / 25;
+    font-family:Arial, Helvetica, sans-serif;
+    justify-items: center;
+    align-items: center;
+    line-height: 1.4;
+    font-weight: bold; 
+   
+    color:rgb(97, 154, 207);
+    text-align: center;
+   
+}
+.primero p{
+    margin-left: 4%;
+    font-size: 1.2em;
+}
+
+
+.ulti{
+    grid-column: 1 / 4;
+    grid-row: 26 / 27;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: .7em;
+    line-height: 1.3;
+}
+.ulti:hover{ 
+    background-color: darkblue;
+    color: white;
+    font-size: .8em;
+    cursor: ew-resize;
+}
+
+.re{
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    
+}
+
+.su{
+    grid-column: 2 / 4;
+}
+
+.va{
+    grid-row: 5 / 9;
+    grid-column: 2 / 3;
+}
+
+.di{
+    grid-column: 2 / 3;
+    grid-row: 9 / 14;
+}
+.ga{
+    grid-row: 17 / 20;
+    grid-column: 2 / 3;
+}
+.comision{
+    grid-column: 2 / 3;
+    grid-row: 11 / 21;
+}
+
+.ca{
+    grid-column: 2 / 3;
+    grid-row: 21 / 25;
+}
+/*cuadro de COMISIÓN ESPECIAL DE EMERGENCIA HÍDRICA */
+
+.comision{
+    margin: 8% 0 0 17%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 35% 30% 40%;
+    grid-template-rows: 47 (min-content 10% max-content 40%);
+    
+}
+.comision div{
+    background-color: rgb(236, 244, 247);
+    border: .5px solid #8f8f8f;
+    padding: 6px;
+    display: flex;
+    justify-content:left;
+}
+
+.sucolum span{
+    transition: all .5s;
+}
+.comision span{
+    transition: all .5s;
+}
+
+.comision span:hover{
+    margin-left: 3%;
+    padding-left: 1%;
+    color: #131212;
+    text-shadow: 1px 2px 3px rgb(54, 27, 27);
+}
+
+.primero1{
+    grid-row: 1 / 48;
+    font-family:Arial, Helvetica, sans-serif;
+    justify-items: center;
+    align-items: center;
+    line-height: 1.4;
+    font-weight: bold; 
+   
+    color:rgb(97, 154, 207);
+    text-align: center;
+   
+}
+.primero1 p{
+    margin-left: 4%;
+    font-size: 1.2em;
+}
+
+.primero1:hover{
+    background-color: bisque;
+}
+
+.final{
+    grid-column: 1 / 4;
+    grid-row: 48 / 49;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: .7em;
+    line-height: 1.3;
+    transition: all .5s;
+}
+.final:hover{
+    background-color: darkblue;
+    color: white;
+    font-size: .8em;
+    cursor: ew-resize;
+}
+
+.re{
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    
+}
+
+.sucolum{
+    grid-column: 2 / 4;
+}
+.surow{
+    grid-row: 2 / 4;
+}
+.ti{
+    grid-column: 2 / 3;
+    grid-row: 8 / 12;
+}
+.ti2{
+    grid-column: 2 / 3;
+    grid-row: 13 / 17;
+}
+.ti3{
+    grid-column: 2 / 3;
+    grid-row: 18 / 20;
+}
+.ti4{
+    grid-column: 2 / 3;
+    grid-row: 31 / 33;
+}
+.ti5{
+    grid-column: 2 / 3;
+    grid-row: 40 / 42;
+}
+.ti6{
+    grid-column: 2 / 3;
+    grid-row: 43 / 45;
+}
+.ti7{
+    grid-column: 2 / 3;
+    grid-row: 46 / 48;
+}
+
+/*MESA ---------------------------------------*/
+
+
+.mesa{
+    margin: 8% 0 0 17%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 35% 30% 40%;
+    grid-template-rows: 26 (min-content 10% max-content 40%);
+    
+}
+
+.mesa1{
+    margin: 8% 0 0 17%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 35% 30% 40%;
+    grid-template-rows: 31 (min-content 10% max-content 40%);
+    
+}
+.mesa2{
+    margin: 8% 0 0 17%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 35% 30% 40%;
+    grid-template-rows: 16 (min-content 10% max-content 40%);
+    
+}
+.mesa3{
+    margin: 8% 0 0 17%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 35% 30% 40%;
+    grid-template-rows: 17 (min-content 10% max-content 40%);
+    
+}
+.mesa4{
+    margin: 8% 0 0 17%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 35% 30% 40%;
+    grid-template-rows: 15 (min-content 10% max-content 40%);
+    
+}
+.mesa5{
+    margin: 8% 0 0 17%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 35% 30% 40%;
+    grid-template-rows: 49 (min-content 10% max-content 40%);
+    
+}
+.mesa6{
+    margin: 8% 0 0 17%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 35% 30% 40%;
+    grid-template-rows: 19 (min-content 10% max-content 40%);
+    
+}
+.mesa7{
+    margin: 8% 0 0 17%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 35% 30% 40%;
+    grid-template-rows: 10 (min-content 10% max-content 40%);
+    
+}
+.mesa8{
+    margin: 8% 0 0 17%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 35% 30% 40%;
+    grid-template-rows: 32 (min-content 10% max-content 40%);
+    
+}
+.mesa div{
+    background-color: rgb(236, 244, 247);
+    border: .5px solid #8f8f8f;
+    padding: 6px;
+    display: flex;
+    justify-content:left;
+}
+.mesa1 div{
+    background-color: rgb(236, 244, 247);
+    border: .5px solid #8f8f8f;
+    padding: 6px;
+    display: flex;
+    justify-content:left;
+}
+.mesa2 div{
+    background-color: rgb(236, 244, 247);
+    border: .5px solid #8f8f8f;
+    padding: 6px;
+    display: flex;
+    justify-content:left;
+}
+.mesa3 div{
+    background-color: rgb(236, 244, 247);
+    border: .5px solid #8f8f8f;
+    padding: 6px;
+    display: flex;
+    justify-content:left;
+}
+.mesa4 div{
+    background-color: rgb(236, 244, 247);
+    border: .5px solid #8f8f8f;
+    padding: 6px;
+    display: flex;
+    justify-content:left;
+}
+.mesa5 div{
+    background-color: rgb(236, 244, 247);
+    border: .5px solid #8f8f8f;
+    padding: 6px;
+    display: flex;
+    justify-content:left;
+}
+.mesa6 div{
+    background-color: rgb(236, 244, 247);
+    border: .5px solid #8f8f8f;
+    padding: 6px;
+    display: flex;
+    justify-content:left;
+}
+.mesa7 div{
+    background-color: rgb(236, 244, 247);
+    border: .5px solid #8f8f8f;
+    padding: 6px;
+    display: flex;
+    justify-content:left;
+}
+.mesa8 div{
+    background-color: rgb(236, 244, 247);
+    border: .5px solid #8f8f8f;
+    padding: 6px;
+    display: flex;
+    justify-content:left;
+}
+.sucolum span{
+    transition: all .5s;
+}
+.mesa span{
+    transition: all .5s;
+}
+.mesa1 span{
+    transition: all .5s;
+}
+.mesa2 span{
+    transition: all .5s;
+}
+.mesa3 span{
+    transition: all .5s;
+}
+.mesa4 span{
+    transition: all .5s;
+}
+.mesa5 span{
+    transition: all .5s;
+}
+.mesa6 span{
+    transition: all .5s;
+}
+.mesa7 span{
+    transition: all .5s;
+}
+.mesa8 span{
+    transition: all .5s;
+}
+.mesa span:hover{
+    margin-left: 3%;
+    padding-left: 1%;
+    color: #131212;
+    text-shadow: 1px 2px 3px rgb(54, 27, 27);
+}
+.mesa1 span:hover{
+    margin-left: 3%;
+    padding-left: 1%;
+    color: #131212;
+    text-shadow: 1px 2px 3px rgb(54, 27, 27);
+}
+.mesa2 span:hover{
+    margin-left: 3%;
+    padding-left: 1%;
+    color: #131212;
+    text-shadow: 1px 2px 3px rgb(54, 27, 27);
+}
+.mesa3 span:hover{
+    margin-left: 3%;
+    padding-left: 1%;
+    color: #131212;
+    text-shadow: 1px 2px 3px rgb(54, 27, 27);
+}
+.mesa4 span:hover{
+    margin-left: 3%;
+    padding-left: 1%;
+    color: #131212;
+    text-shadow: 1px 2px 3px rgb(54, 27, 27);
+}
+.mesa5 span:hover{
+    margin-left: 3%;
+    padding-left: 1%;
+    color: #131212;
+    text-shadow: 1px 2px 3px rgb(54, 27, 27);
+}
+.mesa7 span:hover{
+    margin-left: 3%;
+    padding-left: 1%;
+    color: #131212;
+    text-shadow: 1px 2px 3px rgb(54, 27, 27);
+}
+.mesa8 span:hover{
+    margin-left: 3%;
+    padding-left: 1%;
+    color: #131212;
+    text-shadow: 1px 2px 3px rgb(54, 27, 27);
+}
+
+.pri1{
+    grid-row: 1 / 25;
+    font-family:Arial, Helvetica, sans-serif;
+    justify-items: center;
+    align-items: center;
+    line-height: 1.4;
+    font-weight: bold; 
+   
+    color:rgb(97, 154, 207);
+    text-align: center;
+   
+}
+.pri2{
+    grid-row: 1 / 32;
+    font-family:Arial, Helvetica, sans-serif;
+    justify-items: center;
+    align-items: center;
+    line-height: 1.4;
+    font-weight: bold; 
+
+    color:rgb(97, 154, 207);
+    text-align: center;
+}
+.pri3{
+    grid-row: 1 / 15;
+    font-family:Arial, Helvetica, sans-serif;
+    justify-items: center;
+    align-items: center;
+    line-height: 1.4;
+    font-weight: bold; 
+    color:rgb(97, 154, 207);
+    text-align: center;
+}
+.pri4{
+    grid-row: 1 / 14;
+    font-family:Arial, Helvetica, sans-serif;
+    justify-items: center;
+    align-items: center;
+    line-height: 1.4;
+    font-weight: bold; 
+    color:rgb(97, 154, 207);
+    text-align: center;
+}
+.pri5{
+    grid-row: 1 / 30;
+    font-family:Arial, Helvetica, sans-serif;
+    justify-items: center;
+    align-items: center;
+    line-height: 1.4;
+    font-weight: bold; 
+    color:rgb(97, 154, 207);
+    text-align: center;
+}
+.pri6{
+    grid-row: 1 / 6;
+    font-family:Arial, Helvetica, sans-serif;
+    justify-items: center;
+    align-items: center;
+    line-height: 1.4;
+    font-weight: bold; 
+    color:rgb(97, 154, 207);
+    text-align: center;
+}
+.pri7{
+    
+    grid-row: 1 / 16;
+    font-family:Arial, Helvetica, sans-serif;
+    justify-items: center;
+    align-items: center;
+    line-height: 1.4;
+    font-weight: bold; 
+    color:rgb(97, 154, 207);
+    text-align: center;
+}
+.pri8{
+    
+    grid-row: 1 / 15;
+    font-family:Arial, Helvetica, sans-serif;
+    justify-items: center;
+    align-items: center;
+    line-height: 1.4;
+    font-weight: bold; 
+    color:rgb(97, 154, 207);
+    text-align: center;
+}
+.pri9{
+    
+    grid-row: 1 / 48;
+    font-family:Arial, Helvetica, sans-serif;
+    justify-items: center;
+    align-items: center;
+    line-height: 1.4;
+    font-weight: bold; 
+    color:rgb(97, 154, 207);
+    text-align: center;
+}
+.pri10{
+    
+    grid-row: 1 / 19;
+    font-family:Arial, Helvetica, sans-serif;
+    justify-items: center;
+    align-items: center;
+    line-height: 1.4;
+    font-weight: bold; 
+    color:rgb(97, 154, 207);
+    text-align: center;
+}
+.pri11{
+    
+    grid-row: 1 / 31;
+    font-family:Arial, Helvetica, sans-serif;
+    justify-items: center;
+    align-items: center;
+    line-height: 1.4;
+    font-weight: bold; 
+    color:rgb(97, 154, 207);
+    text-align: center;
+}
+.pri12{
+    
+    grid-row: 1 / 10;
+    font-family:Arial, Helvetica, sans-serif;
+    justify-items: center;
+    align-items: center;
+    line-height: 1.4;
+    font-weight: bold; 
+    color:rgb(97, 154, 207);
+    text-align: center;
+}
+
+.primero1 p{
+    margin-left: 4%;
+    font-size: 1.2em;
+}
+
+.primero1:hover{
+    background-color: bisque;
+}
+
+.finalmesa{
+    grid-column: 1 / 4;
+    grid-row: 25 / 26;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: .7em;
+    line-height: 1.3;
+    transition: all .5s;
+}
+.finalmesa:hover{
+    background-color: darkblue;
+    color: white;
+    font-size: .8em;
+    cursor: ew-resize;
+}
+.finalmesa1{
+    grid-column: 1 / 4;
+    grid-row: 32 / 33;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: .7em;
+    line-height: 1.3;
+    transition: all .5s;
+}
+.finalmesa1:hover{
+    background-color: darkblue;
+    color: white;
+    font-size: .8em;
+    cursor: ew-resize;
+}
+.finalmesa2{
+    grid-column: 1 / 4;
+    grid-row: 20 / 21;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: .7em;
+    line-height: 1.3;
+    transition: all .5s;
+}
+.finalmesa3{
+    grid-column: 1 / 4;
+    grid-row: 15 / 16;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: .7em;
+    line-height: 1.3;
+    transition: all .5s;
+}
+.finalmesa3:hover{
+    background-color: darkblue;
+    color: white;
+    font-size: .8em;
+    cursor: ew-resize;
+}
+.finalmesa4{
+    grid-column: 1 / 4;
+    grid-row: 14 / 15;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: .7em;
+    line-height: 1.3;
+    transition: all .5s;
+}
+
+.finalmesa4:hover{
+    background-color: darkblue;
+    color: white;
+    font-size: .8em;
+    cursor: ew-resize;
+}
+.finalmesa5{
+    grid-column: 1 / 4;
+    grid-row: 30 / 31;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: .7em;
+    line-height: 1.3;
+    transition: all .5s;
+}
+
+.finalmesa5:hover{
+    background-color: darkblue;
+    color: white;
+    font-size: .8em;
+    cursor: ew-resize;
+}
+.finalmesa6{
+    grid-column: 1 / 4;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: .7em;
+    line-height: 1.3;
+    transition: all .5s;
+}
+
+.finalmesa6:hover{
+    background-color: darkblue;
+    color: white;
+    font-size: .8em;
+    cursor: ew-resize;
+}
+.finalmesa7{
+    grid-column: 1 / 4;
+    grid-row: 16 / 17;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: .7em;
+    line-height: 1.3;
+    transition: all .5s;
+}
+.finalmesa7:hover{
+    background-color: darkblue;
+    color: white;
+    font-size: .8em;
+    cursor: ew-resize;
+}
+.finalmesa8{
+    grid-column: 1 / 4;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: .7em;
+    line-height: 1.3;
+    transition: all .5s;
+}
+.finalmesa8:hover{
+    background-color: darkblue;
+    color: white;
+    font-size: .8em;
+    cursor: ew-resize;
+}
+.tresi{
+    grid-row: 3 / 8;
+}
+.tresi1{
+    grid-row: 9 / 14;
+}
+.leg{
+    grid-row: 2 / 4;
+}
+.leg4{
+    grid-row: 2 / 10;
+}
+.leg3{
+    grid-row: 3 / 6;
+}
+.dra{
+    grid-row: 5 / 7;
+}
+.pj{
+    grid-row: 8 / 10;
+}
+.pj1{
+    grid-row: 7 / 11;
+}
+.pj2{
+    grid-row: 7 / 9;
+}
+.pj3{
+    grid-row: 8 / 12;
+}
+.lic{
+    grid-row: 11 / 13;
+}
+.lic2{
+    grid-row: 10 / 12;
+}
+.repre{
+    grid-row: 14 / 16;
+}
+.defe{
+    grid-row: 17 / 19;
+}
+.defe1{
+    grid-row: 13 / 15;
+}
+.defe2{
+    grid-row: 2 / 32;
+}
+.defe3{
+    grid-row: 2 / 17;
+}
+.leg2{
+    grid-row: 4 / 10;
+}
+.dr2{
+    grid-row: 11 / 16;
+}
+.dr3{
+    grid-row: 20 / 26;
+}
+.dr4{
+   grid-row: 27 / 31; 
+}
+.dra5{
+    grid-row: 28 / 33;
+}
+.pres{
+    grid-row: 2 / 30;
+}
+.pres1{
+    grid-row: 9 / 14;
+}
+.pres2{
+    grid-row: 2 / 6;
+}
+.pres3{
+    grid-row: 12 / 18;
+}
+.pres4{
+    grid-row: 10 / 16;
+}
+.pres5{
+    grid-row: 23 / 27;
+}
+.pres6{
+    grid-row: 34 / 36;
+}
+.pres7{
+    grid-row: 37 / 39;
+}
+.pres8{
+    grid-row: 40 / 42;
+}
+.pres9{
+    grid-row: 43 / 45;
+}
+.pres10{
+    grid-row: 46 / 48;
+}
+.dia{
+    grid-row: 13 / 17;
+}
+/*dentro de las comisiones, opciones del lado derecho con sus descripcines*/
+.up-img{
+    text-transform: none;
+    
+}
+
+.opcion span{
+    width: 70%;
+    display: none;
+} 
+
+.opcion:hover span{
+    display: block;
+    position: absolute;
+    top: 100%;
+    box-shadow: 2px 4px 5px rgb(156, 149, 84);
+    padding: 1%;
+    font-size: .9em;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*margen del ultimo div*/
+.margbottom{
+    margin-bottom: 15%;
+}
+
+
+/*--------------------------------------------------------------------------*/
+
+/*opciones de comisiones especiales nuevo*/
+
+.boton-modal{
+    height: 6%;
+    position: fixed;
+    background-color: white;
+    right: 2%;
+    top: 45%;
+    background-color: brown;
+    
+}
+.boton-modal p{
+    font-size: .9em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.boton-modal label{
+    
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.boton-modal label:hover{
+    background-color: rgb(195, 106, 106);
+}
+#btn-modal{
+    display: none;
+}
+.container-modal{
+    
+    position: fixed;
+    top: 25%;
+    right: 1%;
+ 
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 300;
+}
+#btn-modal:checked ~ .container-modal{
+    display: flex;
+}
+.content-modal{
+    width: 100%;
+    max-width: 400px;
+    background-color: brown;
+    border-radius: 4px;
+
+}
+
+.content-modal h2{
+    font-size: .9em;
+    text-align: center;
+    color: rgb(6, 6, 6);
+    font-weight: bolder;
+    background-color: #d3cece;
+}
+.content-modal p{
+    font-size: .8em;
+    padding: 15px 0px;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    color: white;
+}
+.container-modal p:hover{
+    font-size: 1em;
+}
+.content-modal .btn-cerrar{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.content-modal .btn-cerrar label{
+    padding: 2%;
+    background-color: rgb(158, 71, 71);
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.content-modal .btn-cerrar label:hover{
+    background-color: #a46a59;
+}
+.cerrar-modal{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 1;
+}
+/*modificaciones propias*/
+.boton-modal p{
+    margin-bottom: 10px;
+}
+/*-------------------------------*/
+
+/*-------------------------------------------------------------------*/
+.imagenhl{
+    position: fixed;
+    left: 75%; 
+    width: 100%;
+    top: 5%;
+    z-index: 400;
+    transition: all .5s;
+    
+}
+
+.imagenhl img{
+    position: fixed;
+    top: 4%;
+    width: 9%;
+    right: 16%;
+    border-radius: 50%;
+    transition: all .9s;
+}
+.imagenhl p{
+    color: rgb(245, 240, 233);
+    margin-top: 2%;
+    width: 18%;
+    text-align: center;
+    font-size: 1em;
+    line-height: 22px;
+    transition: all .5s;
+}
+.imagenhl p span{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(245, 240, 233)
+}
+.imagenhl p:hover span{
+    color: brown;
+    font-size: .6em;
+}
+.imagenhl:hover img{
+    right: 0;
+}
+.imagenhl:hover p{
+    color: black;
+}
+.letra p{
+    font-family: "Parisienne", cursive;
+   
+}
+
+@media only screen and (min-width: 300px) and (max-width: 768px){
+    .recepcion{
+        margin-left: 14%;
+        width: 60%;
+        grid-template-columns: 35% 30% 35%;
+    }
+    .recepcion p{
+        font-size: .6em;
+    }
+    .recepcion span{
+        font-size: .6em;
+    }
+    .ultimo p{
+        font-size: .7em;
+    }
+    .trespartes{
+        margin-left: 14%;
+        width: 60%;
+        grid-template-columns: 40% 10% ;
+    }
+    .trespartes .bordeuno{
+        font-size: .5em;
+    }
+    .trespartes .bordedos{
+        font-size: .5em;
+    }
+    .trespartes .ultimo{
+        font-size: .5em;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .recepcion{
+        margin-left: 14%;
+        width: 60%;
+        grid-template-columns: 30% 30% 35%;
+    }
+    .recepcion p{
+        font-size: .8em;
+    }
+    .recepcion span{
+        font-size: .8em;
+    }
+    .ultimo p{
+        font-size: .9em;
+    }
+    .trespartes{
+        margin-left: 14%;
+        width: 60%;
+        grid-template-columns: 40% 10% ;
+    }
+    .trespartes .bordeuno{
+        font-size: .8em;
+    }
+    .trespartes .bordedos{
+        font-size: .8em;
+    }
+    .trespartes .ultimo{
+        font-size: .6em;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1400px){
+    .recepcion{
+        margin-left: 14%;
+        width: 60%;
+        grid-template-columns: 25% 30% 35%;
+    }
+    .recepcion p{
+        font-size: 1em;
+    }
+    .recepcion span{
+        font-size: .9em;
+    }
+    .ultimo p{
+        font-size: 1em;
+    }
+   
+    .trespartes .bordeuno{
+        font-size: .9em;
+    }
+    .trespartes .bordedos{
+        font-size: .9em;
+    }
+    .trespartes .ultimo{
+        font-size: .8em;
+    }
+}

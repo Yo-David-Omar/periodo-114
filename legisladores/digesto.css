@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(212, 211, 214);
+}
+.principal{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background-color: rgb(166, 197, 193);
+    color: white;
+    text-align: center;
+    z-index: 200;
+    
+}
+.principal a{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20%;
+    font-size: 5em;
+    color: rgb(177, 203, 200);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px  rgb(202, 223, 221);
+    
+}
+.principal img{
+    width: 18%;
+}
+.principal1{
+    text-align: center;
+    position: fixed;
+    top: 7%;
+    width: 20%;
+    height: 150.%;
+    right: 5%;
+    z-index: 200;
+    background-color: dimgray;
+}
+.principal1 a{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    text-decoration: none;
+    color: rgb(248, 245, 245);
+    font-weight: bolder;
+}
+.principal1 a span{
+    text-transform: uppercase;
+    color: brown;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5em;
+}
+.principal1 p{
+    font-style: italic;
+    margin-top: 0;
+    line-height: 1%;
+}
+.fondoprin{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    top: 20%;
+    background-color: rgb(108, 126, 122);
+    
+}
+.box1{
+    width: 100%;
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 3;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.fondoprin div a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: .8em;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.fondoprin a:hover{
+    text-shadow: 1px 1px 1px white;
+    color: rgb(0, 0, 0);
+    border: none;
+}
+/*
+.fondoprin div a{
+    
+    color: rgb(32, 28, 28);
+    padding: 2%;
+    margin: 5%;
+    font-family:  Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: .9em;
+    transition: all .5s;
+}
+.fondoprin a:hover{
+    background-color: black;
+    color: aliceblue;
+    border: none;
+}*/
+/*
+.box{
+    background-color: rgb(192, 190, 190);
+    position: fixed;
+    top: 0;
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30%;
+    text-align: center;
+    border: 4px double rgb(82, 82, 82);
+    border-radius: 4px;
+    z-index: 300;
+}
+.box a{
+    color: white;
+    text-decoration: none;
+    width: 80%;
+    margin-top: 8%;
+    margin-left: 8%;
+    transition: all .7s;
+    border-radius: 26px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.box a:hover{
+    background-color: azure;
+    color: black;
+}*/
+
+.flotas{
+
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    
+    text-align: justify;
+}
+.flotas div{
+    background-color: rgb(209, 201, 201);
+    padding: 1%;
+    margin: 5%;
+    text-transform: uppercase;
+}
+.flotas h2{
+    color: aliceblue;
+    text-align: center;
+    background-color: brown;
+}
+.flotas p{
+    margin-top: 2%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: .9em;
+    color: black;
+   
+}
+.flota{
+    width: 40%;
+    
+}
+.flota img{
+    margin-left: 5%;
+    width: 90%;
+}
+.flota1{
+    width: 40%;
+}
+.flota1 img{
+    width: 100%;
+}
+
+.flota2{
+    width: 40%;
+}
+.flota2 img{
+    width: 100%;
+}
+.flota3{
+    width: 40%;
+}
+.flota3 img{
+    width: 100%;
+}
+.flota4{
+    width: 40%;
+}
+.flota4 img{
+    width: 100%;
+}
+.flota5{
+    width: 40%;
+}
+.flota5 img{
+    width: 100%;
+}
+.flota6{
+    width: 40%;
+}
+.flota6 img{
+    width: 100%;
+}
+.flota7{
+    width: 40%;
+}
+.flota7 img{
+    width: 100%;
+}
+.flota8{
+    width: 40%;
+}
+.flota8 img{
+    width: 100%;
+}
+.flota9{
+    width: 40%;
+}
+.flota9 img{
+    width: 100%;
+}
+
+/*imagen*/
+
+.divimg{
+    width: 100%;
+    display: block;
+    float: right;
+}
+.divimg img{
+    width: 30%;
+}
+.divimg p{
+    width: 30%;
+}
+/*imagen de banquetas vacias*/
+.banqueta{
+    width: 50%;
+    position: absolute;
+    top: 55%;
+    left: 60%;
+   
+    border-bottom: 1px solid black;
+}
+.banqueta img{
+    width: 40%;
+
+}
