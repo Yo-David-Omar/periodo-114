@@ -1,0 +1,485 @@
+@import url(/estilosgenerales.css);
+@import url(/opciones/opcionezq.css);
+@import url('https://fonts.googleapis.com/css2?family=Meie+Script&family=Parisienne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=UnifrakturMaguntia&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: antiquewhite;
+}
+/*---------------------------------------*/
+
+
+.cuadrocolor{
+    background-color: white;
+    position: fixed;
+    top: 3%;
+    right: 0;
+    width: 25%;
+    height: 200px;
+    
+}
+.cuadrocolor div{
+    padding: 3%;
+}
+
+
+.slider-container {
+    width: 100%; /* Ajusta el ancho según lo necesites */
+    height: 175px; /* Ajusta el alto según lo necesites */
+    overflow: hidden;
+    max-height: 100%;
+    
+    
+}
+
+.slider-container img {
+    border-radius: 2%;
+    width: 90%;
+    height: auto;
+    display: none;
+}
+
+/*---------------------------------------*/
+
+
+.principal{
+    width: 50%;
+    margin: 10% 0 7% 17%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 30% 35% 40%;
+    grid-template-rows: 5 (min-content 10% max-content 40%);
+    font-family:'Times New Roman', Times, serif;
+    font-size:medium;
+    text-align:left;
+    font-weight:normal;
+    
+}
+
+.principal div{
+    border: .5px solid #8f8f8f;
+    padding: 6px;
+    display: flex;
+    justify-content:left;
+    background-color: rgb(236, 244, 247);
+    
+}
+.principal span{
+    transition: all .5s;
+}
+.principal span:hover{
+    margin-left: 3%;
+    padding-left: 1%;
+    color: #131212;
+    text-shadow: 1px 2px 3px rgb(54, 27, 27);
+}
+.uno{
+    text-align: center;
+    grid-column: 1 / 2;
+    grid-row: 1 / 9;
+    font-size: 1em;
+    color:rgb(97, 154, 207);
+    font-family:Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.4;
+    font-weight: bold; 
+    
+}
+.uno:hover{
+    background-color: bisque;
+}
+
+.dos2{
+    grid-row: 5 / 9
+}
+.trece{
+    grid-column: 1 / 4;
+    
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: .7em;
+    line-height: 1.3;
+    transition: all .5s;
+}
+.trece:hover{
+    background-color: darkblue;
+    color: white;
+    font-size: .8em;
+    cursor: ew-resize;
+}
+
+
+/*cuadro 2(de recepcion interna)*/
+
+.segundo{
+    width: 50%;
+    margin: 3% 0 7% 17%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: 2 (min-content 10% max-content 40%);
+    font-family:'Times New Roman', Times, serif;
+    font-size:medium;
+    text-align:left;
+    font-weight:normal;
+    
+}
+
+.segundo div{
+    border: .5px solid #8f8f8f;
+    padding: 6px;
+    display: flex;
+    justify-content:left;
+    background-color: rgb(236, 244, 247)
+}
+
+
+.uno1{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    font-family:Arial, Helvetica, sans-serif;
+    justify-items: center;
+    align-items: center;
+    line-height: 1.4;
+    font-weight: bold; 
+    font-size: 1em;
+    color:rgb(97, 154, 207);
+}
+.uno1:hover{
+    background-color: bisque;
+}
+
+.seis{
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: .7em;
+    line-height: 1.3;
+}
+
+
+
+/*cuadro*/
+
+.recepcion{
+    margin: 3% 0 7% 17%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: 24 (min-content 10% max-content 40%);
+
+}
+.recepcion div{
+    border: .5px solid #8f8f8f;
+    padding: 6px;
+    display: flex;
+    justify-content:left;
+    background-color: rgb(236, 244, 247);
+}
+.recepcion span{
+    transition: all .5s;
+}
+.recepcion span:hover{
+    margin-left: 3%;
+    padding-left: 1%;
+    color: #131212;
+    text-shadow: 1px 2px 3px rgb(54, 27, 27);
+}
+
+.primero{
+    grid-row: 1 / 21;
+    font-family:Arial, Helvetica, sans-serif;
+    justify-items: center;
+    align-items: center;
+    line-height: 1.4;
+    font-weight: bold; 
+    font-size: 1em;
+    color:rgb(97, 154, 207);
+    text-align: center;
+    
+}
+.primero p{
+    width: 80%;
+}
+
+.primero:hover{
+    background-color: bisque;
+}
+
+.ultimo{
+    grid-column: 1 / 4;
+    grid-row: 26 / 27;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: .7em;
+    line-height: 1.3;
+    transition: all .5s;
+}
+.ultimo:hover{
+    background-color: darkblue;
+    color: white;
+    font-size: .8em;
+    cursor: ew-resize;
+}
+
+.miembros{
+    grid-column: 2 / 3;
+    grid-row: 1 / 11;
+    
+}
+
+.comision{
+    grid-column: 2 / 3;
+    grid-row: 11 / 21;
+}
+/*dentro de las comisiones, opciones del lado derecho con sus descripcines*/
+.up-img{
+    text-transform: none;
+    
+}
+
+.opcion span{
+    width: 70%;
+    display: none;
+} 
+
+.opcion:hover span{
+    display: block;
+    position: absolute;
+    top: 100%;
+    box-shadow: 2px 4px 5px rgb(156, 149, 84);
+    padding: 1%;
+    font-size: .9em;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: blanchedalmond;
+}
+/*opciones de comisiones especiales nuevo*/
+
+.boton-modal{
+    height: 6%;
+    position: fixed;
+    background-color: white;
+    right: 2%;
+    top: 45%;
+    background-color: brown;
+    
+}
+.boton-modal p{
+    font-size: .9em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.boton-modal label{
+    
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.boton-modal label:hover{
+    background-color: rgb(195, 106, 106);
+}
+#btn-modal{
+    display: none;
+}
+.container-modal{
+    
+    position: fixed;
+    top: 25%;
+    right: 1%;
+ 
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 300;
+}
+#btn-modal:checked ~ .container-modal{
+    display: flex;
+}
+.content-modal{
+    width: 100%;
+    max-width: 400px;
+    background-color: brown;
+    border-radius: 4px;
+
+}
+
+.content-modal h2{
+    font-size: .9em;
+    text-align: center;
+    color: rgb(6, 6, 6);
+    font-weight: bolder;
+    background-color: #d3cece;
+}
+.content-modal p{
+    font-size: .8em;
+    padding: 15px 0px;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    color: white;
+}
+.container-modal p:hover{
+    font-size: 1em;
+}
+.content-modal .btn-cerrar{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.content-modal .btn-cerrar label{
+    padding: 2%;
+    background-color: rgb(158, 71, 71);
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.content-modal .btn-cerrar label:hover{
+    background-color: #a46a59;
+}
+.cerrar-modal{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 1;
+}
+/*modificaciones propias*/
+.boton-modal p{
+    margin-bottom: 10px;
+}
+/*-------------------------------------------------------------------*/
+.imagenhl{
+    position: fixed;
+    left: 75%; 
+    width: 100%;
+    top: 5%;
+    z-index: 400;
+    transition: all .5s;
+    
+}
+
+.imagenhl img{
+    position: fixed;
+    top: 4%;
+    width: 9%;
+    right: 16%;
+    border-radius: 50%;
+    transition: all .9s;
+}
+.imagenhl p{
+    color: rgb(245, 240, 233);
+    margin-top: 2%;
+    width: 18%;
+    text-align: center;
+    font-size: 1em;
+    line-height: 22px;
+    transition: all .5s;
+}
+.imagenhl p span{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(245, 240, 233)
+}
+.imagenhl p:hover span{
+    color: brown;
+    font-size: .6em;
+}
+.imagenhl:hover img{
+    right: 0;
+}
+.imagenhl:hover p{
+    color: black;
+}
+.letra p{
+    font-family: "Parisienne", cursive;
+   
+}
+
+
+/*-------------------------------*/
+@media screen and (max-width: 800px) {
+    .content-modal{
+        width: 90%;
+    }
+}
+
+/*------------------------------------------------------------------------*/
+@media only screen and (min-width: 300px) and (max-width: 768px){
+    .principal p{
+        font-size: .5em;
+    }
+    .recepcion p{
+        font-size: .5em;
+    }
+  
+    .primero p{
+        font-size: .6em;
+    }
+    .em{
+        font-size: .5em;
+    }
+    .trece{font-size: .5em;}
+    .ultimo{font-size: .5em}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .principal{
+        width: 50%;
+        margin-top:10%;
+        margin-left: 30%;
+    }
+    .principal p{
+        font-size: .6em;
+    }
+    .segundo{
+        width: 50%;
+        margin-left: 30%;
+    }
+    .recepcion{
+        margin-left: 30%;
+    } 
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px){
+    .principal{
+        width: 45%;
+        margin-top:20%;
+        margin-left: 30%;
+    }
+
+    .recepcion p{
+        font-size: .8em;
+    }
+
+    .segundo{
+        width: 45%;
+        margin-left: 30%;
+    }
+    
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+    .principal{
+        width: 50%;
+        margin-top:10%;
+        margin-left: 20%;
+    }
+    .segundo{
+        width: 50%;
+        margin-left: 20%;
+    }
+    .recepcion{
+        margin-left: 20%;
+    } 
+    
+}
+

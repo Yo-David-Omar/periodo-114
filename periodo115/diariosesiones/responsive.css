@@ -1,0 +1,180 @@
+@import url(/opciones/opcionezq.css);
+
+
+@media only screen and (min-width: 300px) and (max-width: 768px){
+    .lat div{
+        font-size: .7em;
+        
+    }
+    .sol div{
+        margin-top: 7%;
+    }
+    .sol p{
+        font-size: .6em;
+    }
+    .lat span{
+        font-size: .7em;
+    }
+    .lat .sol h4{
+        width: 18%;
+        font-size: .7em;
+    }
+    .lat .sol h3{
+        margin-top: 35%;
+    }
+    .cont{
+        font-size: .8em;
+    }
+    .cont p{
+        font-size: .6em;
+    }
+    .cont h3{
+        font-size: .8em;
+    }
+    .cont h4{
+        font-size: .8em;
+    }
+    .pp {
+        font-size: .5em;
+    }
+    .em{
+        font-size: .6em;
+    }
+    .grb{
+        top: 60%;
+    }
+    .grb h1{
+        font-size: 1.5em;
+    }
+    video{
+        left: 72%;
+    }
+    .imagenhl p{
+        font-size: .6em;
+    }
+    .cen{
+        font-size: .6em;
+    }
+
+    .bord p{
+        font-size: .6em;
+        border-bottom: 1px solid rgb(225, 209, 209);
+        margin-top: 3%;
+    }
+    .slider-container{
+        height: 20%;
+    }
+    .borde2{
+        margin-top: 2%;
+        background-color: darkcyan;
+        font-size: .4em;
+       
+    }
+    .borde2 img{
+        display: none;
+    }
+    .poder-leg h1{
+        font-size: 1.8em;
+    }
+    .poder-leg h3{
+        font-size: 1em;
+    }
+    .poder-leg h4{
+        font-size: .8em;
+    }
+    .subtitulos .manzur h2{
+        font-size: .9em;
+    }
+    .subtitulos p{
+        font-size: .5em;
+    }
+    .poder-leg{
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .lat div{
+        font-size: .9em;
+        
+    }
+    .sol div{
+        margin-top: 7%;
+    }
+    .sol p{
+        font-size: .7em;
+    }
+    .lat span{
+        font-size: .8em;
+    }
+    .lat .sol h4{
+        width: 19%;
+        font-size: .8em;
+    }
+    .lat .sol h3{
+        margin-top: 16%;
+    }
+    .cont{
+        font-size: .9em;
+    }
+    .cont p{
+        font-size: .7em;
+    }
+    .cont h3{
+        font-size: .9em;
+    }
+    .cont h4{
+        font-size: .9em;
+    }
+    .pp {
+        font-size: .6em;
+    }
+    .em{
+        font-size: .7em;
+    }
+    .grb h1{
+        font-size: 2em;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px){
+    .lat div{
+        font-size: .95em;
+        
+    }
+    .lat span{
+        font-size: .8em;
+    }
+    .sol div{
+        margin-top: 7%;
+    }
+    .sol p{
+        font-size: .8em;
+    }
+    .lat .sol h4{
+        width: 20%;
+        font-size: .95em;
+    }
+    .lat .sol h3{
+        margin-top: 20%;
+    }
+    .cont{
+        font-size: 1em;
+    }
+    .cont p{
+        font-size: .9em;
+    }
+    .cont h4{
+        font-size: .95em;
+    }
+    .pp {
+        font-size: .8em;
+    }
+    .em{
+        font-size: 1em;
+    }
+    .grb h1{
+        font-size: 3em;
+    }
+}

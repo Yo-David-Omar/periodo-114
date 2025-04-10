@@ -1,0 +1,488 @@
+@import url(/cuadrosesiones.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Meie+Script&family=Parisienne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=UnifrakturMaguntia&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(/imagenescudo/fondobiblioteca.avif);
+    background-size: cover;
+    
+}
+/*......*/
+/*
+.face{
+    position: absolute;
+    top: 20%;
+    left: 85%;
+    width: 100%;
+    
+}
+
+.face div{
+    width: 50%;
+}
+.face img{
+    width: 8%;
+    transition: all .5s;
+}
+
+.face div a{
+    width: 100%;
+    
+}
+.face a:hover{
+    border-bottom: 1px solid black;
+
+}
+.face img:hover{
+    width: 25%;
+    
+}*/
+.face{
+    width: 100%; 
+    margin-top: 1.2%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(221, 221, 221);
+    padding: 0 3%;
+}
+.face div{
+    margin: 0 5%;
+    width: 10%;
+    transition: all .5s; 
+}
+.face img{
+    border-radius: 5%;
+    width: 100px;
+    height: 100px;
+}
+
+.face1{
+    transition: all .5s;
+    display: flex;
+    justify-content: space-between;
+}
+.face1 div p{
+    display: none;
+    font-size: .9em;
+    border-bottom: 1px solid black;
+    color: indianred;
+    
+}
+
+.face1 div{
+    width: 100%;
+    transition: all .5s;
+    margin: 2%;
+}
+.face1:hover div p{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.face1 div span{
+    display: none;
+    text-align: left;
+    font-size: .6em;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+.face1:hover div span{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+
+/*-------------------------------*/
+.letra{
+    position: relative;
+    top: 38%;
+    
+}
+.letra p{
+    font-family: "Parisienne", cursive;
+    font-size: 1.9em;
+    font-weight: bolder;
+}
+
+
+/*titulos*/
+
+
+.diario1{
+    
+    display: grid;
+    justify-content: center;
+    
+    max-width: 100%;
+    height: auto;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1 (min-content 50px, max-content 200px);
+    
+    margin: 0;
+    
+}
+
+.uno{
+    background-image: url(../imagenescudo/hojaizq.png);
+    background-size: 100% 100%;
+}
+
+.dos{
+    background-image: url(../imagenescudo/hojadere.png);
+    background-size: 100% 100%;
+}
+.uno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.uno img{
+    width: 400px;
+    height: auto;
+}
+
+.diario1 h2{
+    margin: 10%;
+}
+
+.diario1 h3{
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0px 0px 0.5px;
+    word-spacing: 7px;
+    color: rgb(108, 146, 180);
+    margin: 5%;
+}
+.diario1 a{
+    color: rgb(108, 146, 180);
+    text-decoration: none
+}
+
+
+.diario1{
+    text-align: center;
+    color:  rgb(108, 146, 180);
+    margin: 40px;
+}
+
+.diario1 h4{
+    color: rgb(108, 146, 180);
+    margin: 5px;
+}
+.diario1 p{ 
+    text-align: center;
+   
+}
+
+.diario1 img{
+    height: 80px;
+    width: auto;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/*estilos de parrafos*/
+.presentes{
+    width: auto;
+    margin: 30px;
+    line-height: 22px;
+    
+
+}
+.presentes p{
+    
+    text-align: justify;
+    color: rgb(108, 146, 180); 
+
+}  
+
+.presentes p a{
+    color: rgb(108, 146, 180);
+    text-decoration: none;
+    text-shadow: 0.7px 0px 0px rgb(135, 160, 161);  
+}
+
+.ausentes{
+   display: none;
+    margin: 80px;
+}
+
+.presentes:hover .ausentes{
+    
+    padding: 10px;
+    width: 600px;
+    height: auto;
+    display: block;
+    position: absolute;
+    background-color: white;
+    top: 600px;
+    left: 8px;
+    padding-right: 14px;
+   
+}
+
+.ausentes p{
+    color: rgb(108, 146, 180);
+    
+    text-align: justify;
+    
+    width: 480px;
+    margin-left: 10px;
+    
+}
+
+.ausentes p a{
+    height: 100px;
+    text-align: justify;
+    
+    text-decoration: none;
+    color:rgb(108, 146, 180);
+    text-shadow: 0.7px 0px 0px rgb(135, 160, 161);
+    
+}
+  
+
+.bordeaus{
+    display: inline-block;
+    margin-top: 5px;
+    width: 30px;
+    padding: 5px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+
+.uno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.uno img{
+    width: 400px;
+    height: auto;
+}
+
+/*borde separa cargos*/
+
+.borde{
+    margin-bottom: 10px;
+    border-top: 1px solid black;
+    display: inline-block;
+    width: 20%;
+}
+ 
+/*SESIONES*/
+.sesiones{
+    width: 40%;
+    position: absolute;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 
+    10% 20% 15% 35% 20%;
+    
+    grid-template-rows: fit-content(40%);
+    border: .5px solid #8f8f8f;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom left,  rgb(97, 154, 207) -60%, #fcfcfc 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .7em;
+    top: 50%;
+    bottom: 12%;
+    margin: 1%;
+}
+
+.sesiones div{
+    border: 1px solid #8f8f8f;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100%;
+}
+
+/*enlace sumario*/
+
+.go-sumario{
+    border-right: 4px double rgb(245, 246, 246);
+    display: flex;
+    justify-content: flex-end;
+}
+.go-sumario a:hover{
+    color: rgb(115, 115, 138);
+   
+    color: rgb(73, 62, 62);
+    text-shadow: 1px 1px 3px #fcfcfc;
+   
+}
+
+.go-sumario a{
+    text-decoration: none;
+    margin: 1%;
+    padding: .5%;
+    text-align: center;
+    color: rgb(73, 50, 50);
+    text-shadow: 2px 2px 3px #3f3a3a;
+    
+    transition: all .4s;
+}
+.go-sumario:hover a{
+    background-color: darkslategray;
+    color: white;
+}
+
+/*enlace sumario*/
+
+
+
+.sesiones a{
+    text-decoration: none;
+    color: black;
+    transition: all .5s;
+
+}
+
+.sesiones div:hover a{
+    padding-left: 10px;
+    text-shadow: 1px 4px 5px rgb(9, 8, 8);
+    color: #fcfcfc;
+    font-size: 1.3em;
+}
+
+
+/*referencias de titulos*/
+
+.reftitulos p{
+    font-family: 'Arial Narrow', Arial, sans-serif;;
+}
+
+.titulos{
+    margin-bottom: 5px;
+}
+
+.titulos span{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulos p{
+    font-family:'Arial Narrow', Arial, sans-serif;
+}
+
+/*preparado para mediaqueries*/
+
+.mediaq{
+    display: none;
+}
+
+/*opciones barra arriba*/
+
+.borde1{
+    position: absolute;
+    top: 0;
+    right: 0%;
+    width: 20%;
+    z-index: 4;
+}
+.bde{
+    border-bottom: 1px double rgb(246, 240, 240);
+    
+    width: 40%;
+}
+.borde1 a{
+    color: rgb(153, 153, 176);
+    text-decoration: none;
+    display: none;
+}
+.borde1:hover div a{
+    display: block;
+    border-left: .2px solid rgb(1, 0, 0);
+    border-bottom: .2px solid rgb(1, 0, 0);
+    border-radius: -24px;
+    color: brown;
+    background: #fcfcfc;
+}
+.borde1 div a:hover p{
+    padding-left: 12%;
+    color: rgb(46, 36, 36);
+}
+.borde1 div p{
+    transition: all .5s;
+    padding: 3%;
+}
+.borde1 .bde{
+    border-bottom: 2px solid black;
+    margin: 1%;
+    width: 7%;
+    margin-left: 35%;
+   
+}
+
+.btop{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 3%;
+    background-color: brown;
+    box-shadow: 1px 1px 2px rgb(180, 180, 237);
+    /*background-image: linear-gradient(to bottom right,  rgb(97, 154, 207) -60%, #fcfcfc 100%); */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    z-index: 3;
+}
+.btop a{
+    transition: all .5s;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: .8em;
+}
+
+.btop a:hover{
+    font-size: 1.1em;
+}
+.btop a span{
+    background-color: rgb(224, 188, 188);
+    border: 1px solid black;
+    border-radius: 24px;
+    padding: 4%;
+    font-size: .8em;
+    font-family:'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+
+
+@media (max-width: 1024px){
+  
+    .diario1{
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+    .uno{
+        margin-top: 2%;
+    }
+    .sesiones{
+        position: unset;
+        font-size: .75em;
+        width: 60%;
+        margin: 20% 0 30% 0;
+    }
+    .presentes:hover .ausentes{
+        display: none;
+    }
+    .mediaq{
+        display: block;
+    }
+
+}

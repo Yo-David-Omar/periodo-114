@@ -1,0 +1,235 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:             #8292a9;
+    /* background-color: #4D1A34;*/
+   /*background-color: #25666E;*/
+   /*background-color: #663421;/*
+    /*background-color: #1A4D48;*/
+}
+
+
+.division1{
+    display: flex;
+
+}
+.division1 div{
+    margin: 2%;
+    width: 100%;
+    padding: .5%;
+    border: 1px solid rgb(173, 154, 154);
+    border-radius: 24px;
+    text-align: center;
+    background-color: rgb(218, 208, 196);
+}
+.division1 p{
+    background-color: lightslategrey;
+    border-radius: 24px;
+    color: black;
+    padding: 1%;
+}
+.division1 p:hover{
+    color: white;
+}
+.division2{
+    display: flex;
+    margin-top: 2%;
+   
+}
+.division2 div{
+    margin: 2%;
+    width: 100%;
+    border-left: 6px solid ;
+    border-image: linear-gradient(to top, #833ab4, #fd1d1d, #fcb045) 1;
+    border-bottom-right-radius: 1%;
+    padding: 1%;
+    box-shadow: 1px 1px 2px rgb(129, 125, 125);
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.division2 p{
+    text-align: left;
+    padding: 4%;
+    letter-spacing: 5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .7em;
+}
+.division2 div h2 a{
+    text-decoration: none;
+    color: aliceblue;
+    
+}
+.division2 div h2{
+    background-color: brown;
+    margin-bottom: 1%;
+    text-align: center;
+}
+.division2 img{
+    width: 80%;
+    
+}
+.division2 p{
+    display: inline-block;
+    width: 80%;
+    margin: 1.5% 0;
+    padding: 0 5%;
+}
+/*
+.doble{
+    display: flex;
+   
+}
+.doble p{
+    
+    margin: 0;
+    padding: 0;
+}*/
+/*listas*/
+.division{
+    display: flex;
+    border-bottom: 3px double rgb(255, 255, 255);
+    border-top: 1px solid rgb(204, 178, 178);
+    padding: 3%;
+}
+
+.box-com{
+    display: grid;
+    margin: 0 0 0 1%;
+    padding: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15 (auto);
+    width: 40%;
+    height: 70%;
+    padding: 0 1%;
+    transition: all .5s;  
+}
+.box-com ul{
+    width: 70%;
+    margin-left: 10%;
+    
+}
+.box-com ul li{
+    margin: 4%;
+    border-bottom: 3px double brown;
+    transition: all .5s;
+    list-style-type: square;
+    
+}
+
+.box-com ul li a{
+    text-decoration: none;
+    padding: 2%;
+    letter-spacing: .5px;
+    transition: all .5s;
+    color: beige;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    
+}
+.box-com li:hover{
+    padding: 3% 0;
+    background-color: lightslategrey;
+}
+.box-com div:hover a{
+    color: aliceblue;
+}
+/*titulo fijo de las opciones*/
+.titulo-pos-fix{
+    position: fixed;
+    width: 30%;
+    height: 5%;
+    border: 1px solid white;
+    display: none;
+    background-color: rgb(164, 68, 47);
+    bottom: 7%;
+}
+
+.box-com:hover .titulo-pos-fix{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo-pos-fix p{
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+}
+/*estilos para usar opcion volver a autoridades en barratop */
+.btop p{
+    
+    border: 5px solid white;
+    border-radius: 24px;
+    margin: 0;
+    padding: 3%;
+}
+.btop p:hover{
+    border-color: aqua;
+}
+/*--------------------------*/
+/*parte explicativa*/
+.comision{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1%;
+    margin: 1%;
+    background-color: aliceblue;
+}
+.comision ul{
+    margin-left: 5%;
+    
+}
+.comision p span{
+    border-bottom: 1px solid black;
+}
+.comision p{
+    padding-bottom: 1%;
+}
+.info{
+    display: block;
+    float: right;
+    text-align: center;
+    width: 2%;
+    height: 3%;
+    border: 2px solid black;
+    border-radius: 40px;
+    border-bottom-left-radius: 1px;
+    color: rgb(245, 226, 226);
+    background-color: red;
+    font-weight: bolder;
+}
+
+
+/*imagen para codigo qr solo muestra*/
+.qrcod{
+    display: flex;
+    justify-content: space-between;
+    
+    margin: 0;
+    padding: 1%;
+}
+.qrcod img{
+    margin: 0;
+    width: 7%;
+}
+.dir{
+    display: flex;
+    flex-direction: column;    
+   
+}
+.dir div{
+    padding: 1%;
+    color: darkgrey;
+    border-left: 1px solid rgb(136, 163, 210);
+    border-bottom: 1px solid rgb(136, 163, 210);
+}
+.dir div:hover{
+    color: #fcb045;
+    cursor: pointer;
+}
