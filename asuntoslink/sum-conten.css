@@ -1,0 +1,1294 @@
+@import "/diariosesiones/responsive.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body{
+    background-color: rgb(245, 240, 233);
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+/*-----------------------------------------------------*/
+video{
+    position: fixed;
+    width: 20%;
+    left: 78%;
+    top: 75%;
+}
+/*-----------------------------------------------------*/
+a{
+    text-decoration: none;
+    color: rgb(173, 118, 78);
+}
+ 
+.grb{
+    position: fixed;
+    left: 65%;
+    top: 40%;
+    width: 30%   
+}
+ 
+
+.grb h1{
+    text-align: center;
+    color:  rgb(245, 240, 233);
+    text-shadow: 1px 0px  0px #cfd1d1;
+    transition: all .4s;
+    font-size: 4em;
+    opacity: 50%;
+    width: 100%;
+}
+.grb:hover h1{
+    text-shadow: 0px 0px  10px #cfd1d1;
+    opacity: 80%;
+}
+/*apertura de contenidos todos los diarios*/
+/*
+.primerh1{
+    margin-top: 50px;
+}*/
+/*------------------------------------------------------------------*/
+
+.up-img{
+    background-color: rgb(149, 197, 228);
+    margin-left: 2%;
+    border-bottom: .5px double rgb(10, 8, 8);
+    color: #777e81;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.borde1{
+    
+    position: fixed;
+    top: 25%;
+    left: 70%;
+    width: 40%;
+    z-index: 4;
+}
+
+.borde1 a{
+    background-color: rgb(141, 70, 70);
+    color: rgb(213, 213, 231);
+    text-decoration: none;
+    display: none;
+    border: 1px solid black;
+    border-radius: 24px;
+    margin-top: 3%;
+}
+
+.borde1 img{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    width: 18%;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 24px;
+}
+.borde1:hover div a{
+    display: block;
+    border-left: 1px solid rgb(160, 128, 128);
+    border-radius: -24px;
+   
+}
+
+.borde1 div a:hover p{
+    padding-left: 10%;
+    color: lightgrey;
+}
+
+.borde1 div p{
+    transition: all .5s;
+    padding: 1%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 1px 1px 3px rgb(3, 3, 2);   
+}
+
+.borde1 .bde{   
+    margin: 1%;
+    width: 7%;
+    margin-left: 35%; 
+}
+
+/*--------------------------------------------------------------------*/
+.tomos{
+    width: 30%;
+    position: fixed;
+    right: -2%;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    transition: all .5s;
+}
+
+.tomos div{
+    
+    padding: 4%;
+}
+
+.parte{
+    transition: all .5s;
+}
+
+.parte a{
+    background-color: rgb(141, 70, 70);
+    border: .2px solid rgb(205, 191, 191);
+    border-bottom-left-radius: 26px;
+    border-top-left-radius: 26px;
+    padding: 5px;
+    color: rgb(182, 210, 210);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 1px 1px 3px rgb(3, 3, 2);
+    transition: all .5s;
+}
+
+.tomos div a{
+    display: none;
+}
+
+.tomos:hover div a {
+    display: block;
+    
+}
+
+.tomos div a:hover{
+    
+    padding-left: 28%;
+    
+}
+
+
+/*------------------------------------------------------------------*/
+.cont{
+    width: 37%;
+    margin: 0 0 5% 27%;
+    display: flex;
+    flex-direction: column;  
+}
+
+.cont h4{
+    text-align: center;
+    line-height: 1.4em;
+    margin: 10%;
+    color: rgb(97, 154, 207);
+}
+
+.cont h3{
+    margin-top: 50px;
+    position: relative;
+    left: 46%;
+    width: 9%;
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;    
+}
+
+.cont h3:hover{
+    color: white;
+    background-color: rgb(208, 225, 225);
+    border-bottom: 1px solid black;
+    width: 50px;   
+}
+
+.cont p{
+    margin:10px;                                                                                                                              
+    text-align: justify;      
+}
+
+.fleg{
+    font-style: italic;
+    text-align: justify;
+    line-height: 1.3em;
+    margin: 50px 0 30px 0;
+    display: block;
+    float: right;
+    width: 52%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+}    
+
+.fleg strong{
+    font-style: italic;
+    text-align: justify;
+    line-height: 1.3em;
+    margin: 0 0 0 100%;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 10%;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+}    
+
+.irasuntos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 10%;
+}
+
+.irasuntos img{ 
+    padding-top: .6%; 
+    width: 16%;
+    margin-left: 70%;
+}
+
+/*cierre.cont todos los diarios*/
+
+.c-r{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    line-height: 1.4em;
+}
+
+/*.cont-romanos - cierra informacion de los asuntos entrados en arial */
+
+/*link pie-pagina2 luego transformado a pp2*/
+
+.pp2 a:hover{
+    transition: all .9s;
+    color: rgb(251, 251, 251);
+    text-shadow: 1px 1px 2px black;
+    font-size: 1.5em;
+}
+
+.pp{
+    margin-left: 343px;
+    width: 500px;
+}
+
+.pp p{
+    text-align: center;
+}
+
+.pp1{
+    text-align: justify;
+    line-height: 1.4em;
+    margin-top: 50px;
+    display: block;
+    float: right;
+    width: 45%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.pp2{
+    text-align: justify;
+    width: 100%;
+    line-height: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    display: flex;
+    justify-content: right;
+}
+
+.pp2 p{  
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.pp2 span{
+    width: 50%;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.pp2 em{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+.pp2 img{
+    display: none;
+}
+
+.pp2:hover img{
+    display: block;
+    width: 12%;
+    position: absolute;
+    left: 25%;
+} 
+
+.pp3{
+    width: 100%;
+    line-height: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    display: flex;
+    justify-content: right;
+}
+
+.pp3 p{
+    text-align: center;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.pp3 span{
+    margin-bottom: 10px;
+}
+
+.lat{
+    margin-top: 20px;
+    background-image: linear-gradient(to bottom right,  rgb(97, 154, 207) -60%, #fcfcfc 100%);
+    max-width: 25%;
+    height: 655px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;    
+}
+/*
+.contenido a:hover{
+    transition: all .8s;
+    
+    text-decoration: none;
+    color: rgb(251, 251, 251);
+    text-shadow: 1px 1px 2px black;
+    padding: 4%;
+    margin: 1.5%;
+    font-size: 1.5em;
+}*/
+.sol h4{
+    background-image: linear-gradient(to bottom right,  rgb(97, 154, 207) -60%, #fcfcfc 100%);
+    position: fixed;
+    left: 2.5%;
+    color: rgb(122, 154, 188);
+    font-size: 1.5em;
+}
+
+.sol p{
+    margin-bottom: 5%;
+}
+
+.sol{
+    overflow: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+.sol div{
+    color: #777e81;
+    margin: 10px;
+    padding: 10px;
+}
+
+.lat div{
+    padding: 3.5px;
+    text-align: left;
+    font-size: small;
+    letter-spacing: 0.2px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+}
+
+.lat  span{
+    cursor: pointer;
+    font-size: larger;
+    background-color: rgb(149, 197, 228); 
+    color: rgb(120, 104, 104);
+}
+
+.lat a{
+    line-height: 1.4;
+    text-decoration: none;
+    color: rgb(26, 22, 22);
+}
+
+.lat h3{
+    color: aliceblue;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.sol p{
+    text-align: left;
+}
+
+.logo img{
+    top: 20px;
+    position: fixed; 
+    width: 300px;
+    right: 40px;  
+}
+/*-------------------------------------------------------------------------------------*/
+.btop{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    height: 20px;
+    background-color: brown;
+    box-shadow: 1px 1px 2px rgb(180, 180, 237);
+    /*background-image: linear-gradient(to bottom right,  rgb(97, 154, 207) -60%, #fcfcfc 100%); */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    
+}
+.btop a{
+    transition: all .5s;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: .8em;
+}
+
+.btop a:hover{
+    font-size: 1.1em;
+}
+/*--------------------------------------------------------------------------------------------------*/
+
+.cen{
+
+    font-style: italic;
+    text-align: center;
+    
+}
+
+.firma p{
+    text-align: center;
+}
+
+.firma img{
+    position: relative;
+    width: 50px;
+    height: auto;
+    bottom: 60px;
+    left: 330px;
+    
+}
+
+/*imagenes fotos*/
+.jaldo img{
+    width: 35%;
+    margin-left: 33%;
+}
+
+
+/*
+
+/*imagen*/
+
+.logo img{
+    right: 100px;
+}
+
+/*volve en el scroll (sol)*/
+.back{
+    position: fixed;
+    right: 400px;
+    font-size: 20px;
+    color: white;
+    width: 20px;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 600px;
+}
+.back img{
+    width: 40px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.back a{
+    color: white;
+}
+
+.back2{
+    position: relative;
+    right: -300px;
+}
+
+/*escrito en em*/
+
+.em p{
+    font-style: italic;
+}
+
+.em{
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+
+/*estilo de letras... la legislatura de la provincia*/
+
+
+
+/*imagen lapiz centrado*/
+
+
+
+/*separador (sep) de span en sumario*/
+
+
+.sep p{
+    color: black;
+    text-align: left;
+    margin-top: 10px;
+}
+
+
+/*referencia h2 orden del dia*/
+
+.sol h2{
+    text-align: center;
+    color: #777e81;
+}
+
+/*texto grabado
+
+.grabado{
+    position: fixed;
+    left: 500px;
+    top: 200px;
+    width: 100px;
+    z-index: 2;
+    
+}
+
+.grabado h1{
+    text-align: center;
+    color: antiquewhite;
+    text-shadow: 1px 0.5px 0 #bbc1c3;
+}
+*/
+
+.categoria{
+    width: 60%;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 14 (min-content 30px max-content 200px);
+    padding-bottom: 10px;
+
+}
+
+.categoria div{  
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.porcentaje{
+    width:auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 23 (min-content 10% max-content 100%);
+    padding-bottom: 10px;
+    gap: 0;
+}
+
+.porcentaje div{
+    border: 1px solid black;
+    text-align: center;
+    width: 100%;
+    margin: 4%;
+    padding: 3%;
+}
+
+.genero{
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
+
+.varon{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.mujer{
+    grid-column: 3 / 4;
+    grid-row:  2 / 3;
+}
+
+.sustancia{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+.tabaco{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+.total{
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+}
+
+.btop span{
+    font-weight: bolder;
+}
+
+
+
+
+
+/****************************************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body{
+    background-color: rgb(245, 240, 233);
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+/*-----------------------------------------------------*/
+video{
+    position: fixed;
+    width: 20%;
+    left: 78%;
+    top: 75%;
+    
+
+}
+/*-----------------------------------------------------*/
+a{
+    text-decoration: none;
+    color: rgb(173, 118, 78);
+}
+ 
+.grabado{
+    position: fixed;
+    left: 65%;
+    top: 40%;
+    width: 30%
+    
+}
+ 
+
+.grabado h1{
+    text-align: center;
+    color:  rgb(245, 240, 233);
+    text-shadow: 1px 0px  0px #cfd1d1;
+    transition: all .4s;
+    font-size: 4em;
+    opacity: 50%;
+    width: 100%;
+}
+.grabado:hover h1{
+    text-shadow: 0px 0px  10px #cfd1d1;
+    opacity: 80%;
+}
+/*apertura de contenidos todos los diarios*/
+/*
+.primerh1{
+    margin-top: 50px;
+}*/
+/*------------------------------------------------------------------*/
+
+.up-img{
+    background-color: rgb(149, 197, 228);
+    margin-left: 2%;
+    border-bottom: .5px double rgb(10, 8, 8);
+    color: #777e81;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+.borde1{
+    
+    position: fixed;
+    top: 25%;
+    left: 70%;
+    width: 40%;
+    z-index: 4;
+}
+
+.borde1 a{
+    background-color: rgb(141, 70, 70);
+    color: rgb(213, 213, 231);
+    text-decoration: none;
+    display: none;
+    border: 1px solid black;
+    border-radius: 24px;
+    margin-top: 3%;
+}
+.borde1 img{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    width: 18%;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 24px;
+}
+.borde1:hover div a{
+    display: block;
+    border-left: 1px solid rgb(160, 128, 128);
+    border-radius: -24px;
+   
+}
+.borde1 div a:hover p{
+    padding-left: 10%;
+    color: lightgrey;
+}
+
+.borde1 div p{
+    transition: all .5s;
+    padding: 1%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 1px 1px 3px rgb(3, 3, 2);
+    
+}
+
+.borde1 .bde{
+    
+    margin: 1%;
+    width: 7%;
+    margin-left: 35%;
+   
+}
+
+/*--------------------------------------------------------------------*/
+.tomos{
+    width: 30%;
+    position: fixed;
+    right: -2%;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    transition: all .5s;
+}
+.tomos div{
+    
+    padding: 4%;
+}
+.parte{
+    transition: all .5s;
+}
+
+.parte a{
+    background-color: rgb(141, 70, 70);
+    border: .2px solid rgb(205, 191, 191);
+    border-bottom-left-radius: 26px;
+    border-top-left-radius: 26px;
+    padding: 5px;
+    color: rgb(182, 210, 210);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 1px 1px 3px rgb(3, 3, 2);
+    transition: all .5s;
+}
+
+.tomos div a{
+    display: none;
+}
+
+.tomos:hover div a {
+    display: block;
+    
+}
+
+.tomos div a:hover{
+    
+    padding-left: 28%;
+    
+}
+
+
+/*------------------------------------------------------------------*/
+.contenido{
+    width: 37%;
+    margin: 0 0 5% 27%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+.contenido h4{
+    text-align: center;
+    line-height: 1.4em;
+    margin: 10%;
+    color: rgb(97, 154, 207);
+}
+
+.contenido h3{
+    margin-top: 50px;
+    position: relative;
+    left: 46%;
+    width: 9%;
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;;
+    
+}
+
+.contenido h3:hover{
+    color: white;
+    background-color: rgb(208, 225, 225);
+    border-bottom: 1px solid black;
+    width: 50px;
+    
+}
+
+.contenido p{
+    margin:10px;                                                                                                                              
+    text-align: justify;    
+    
+}
+
+.fleg{
+    font-style: italic;
+    text-align: justify;
+    line-height: 1.3em;
+    margin: 50px 0 30px 0;
+    display: block;
+    float: right;
+    width: 52%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+}    
+
+.fleg strong{
+    font-style: italic;
+    text-align: justify;
+    line-height: 1.3em;
+    margin: 0 0 0 100%;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 10%;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+}    
+
+
+
+
+.irasuntos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 10%;
+}
+
+.irasuntos img{
+    
+    padding-top: .6%; 
+    width: 16%;
+    margin-left: 70%;
+}
+
+/*cierre contenido todos los diarios*/
+
+.contenido-romanos{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    line-height: 1.4em;
+
+}
+
+/* contenido-romanos - cierra informacion de los asuntos entrados en arial */
+
+/*link pie-pagina2*/
+
+.pie-pagina2 a:hover{
+    transition: all .9s;
+    color: rgb(251, 251, 251);
+    text-shadow: 1px 1px 2px black;
+    font-size: 1.5em;
+}
+
+.piepag{
+    margin-left: 343px;
+    width: 500px;
+}
+
+.piepag p{
+    text-align: center;
+}
+
+.pie-pagina{
+    text-align: justify;
+    line-height: 1.4em;
+    margin-top: 50px;
+    display: block;
+    float: right;
+    width: 45%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.pie-pagina2{
+    text-align: justify;
+    width: 100%;
+    line-height: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    display: flex;
+    justify-content: right;
+}
+
+.pie-pagina2 p{
+    
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.pie-pagina2 span{
+    width: 50%;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.pie-pagina2 em{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+.pie-pagina2 img{
+    display: none;
+}
+
+.pie-pagina2:hover img{
+    display: block;
+    width: 12%;
+    position: absolute;
+    left: 25%;
+} 
+
+.pie-pagina3{
+    
+    width: 100%;
+    line-height: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    display: flex;
+    justify-content: right;
+}
+
+.pie-pagina3 p{
+    text-align: center;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.pie-pagina3 span{
+    margin-bottom: 10px;
+}
+
+.lateral{
+    margin-top: 20px;
+    background-image: linear-gradient(to bottom right,  rgb(97, 154, 207) -60%, #fcfcfc 100%);
+    max-width: 25%;
+    
+    height: 655px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    
+    
+}
+/*
+.contenido a:hover{
+    transition: all .8s;
+    
+    text-decoration: none;
+    color: rgb(251, 251, 251);
+    text-shadow: 1px 1px 2px black;
+    padding: 4%;
+    margin: 1.5%;
+    font-size: 1.5em;
+}*/
+.scroll h4{
+    background-image: linear-gradient(to bottom right,  rgb(97, 154, 207) -60%, #fcfcfc 100%);
+    position: fixed;
+    left: 2.5%;
+    color: rgb(122, 154, 188);
+    font-size: 1.5em;
+    
+}
+
+.scroll p{
+    margin-bottom: 5%;
+}
+
+.scroll{
+    overflow: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+.scroll div{
+    color: #777e81;
+    margin: 10px;
+    padding: 10px;
+}
+
+.lateral div{
+    padding: 3.5px;
+    text-align: left;
+    font-size: small;
+    letter-spacing: 0.2px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+}
+
+.lateral  span{
+    cursor: pointer;
+    font-size: larger;
+    background-color: rgb(149, 197, 228); 
+    color: rgb(120, 104, 104);
+}
+
+
+
+.lateral a{
+    line-height: 1.4;
+    text-decoration: none;
+    color: rgb(26, 22, 22);
+}
+
+.lateral h3{
+    color: aliceblue;
+    margin-top: 10%;
+    text-align: center;
+}
+
+
+.scroll p{
+    text-align: left;
+}
+
+
+.tituloleg img{
+    top: 20px;
+    position: fixed; 
+    width: 300px;
+    right: 40px;
+    
+}
+/*-------------------------------------------------------------------------------------*/
+.barratop{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    height: 20px;
+    background-color: brown;
+    box-shadow: 1px 1px 2px rgb(180, 180, 237);
+    /*background-image: linear-gradient(to bottom right,  rgb(97, 154, 207) -60%, #fcfcfc 100%); */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    
+}
+.barratop a{
+    transition: all .5s;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: .8em;
+}
+.barratop a:hover{
+    font-size: 1.1em;
+}
+/*--------------------------------------------------------------------------------------------------*/
+.subtitulos p{
+    
+    text-align: center;
+    
+}
+/*imagenes fotos*/
+.jaldo img{
+    width: 35%;
+    margin-left: 33%;
+}
+
+
+/*
+
+/*imagen*/
+
+.tituloleg img{
+    right: 100px;
+}
+
+/*volve en el scroll*/
+.back{
+    
+    position: fixed;
+    
+    right: 400px;
+    font-size: 20px;
+    color: white;
+    
+    width: 20px;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 600px;
+   
+}
+.back img{
+    width: 40px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.back a{
+    color: white;
+}
+
+.back2{
+    position: relative;
+    right: -300px;
+
+}
+
+/*escrito en em*/
+
+.em p{
+    font-style: italic;
+}
+.em{
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+
+/*estilo de letras... la legislatura de la provincia*/
+
+.fontime p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-style: italic;
+}
+
+
+/*imagen lapiz*/
+
+.subtitulos img{
+    position: relative;
+    width: 50px;
+    height: auto;
+    bottom: 60px;
+    left: 330px;
+    
+}
+
+
+
+/*separador de span en sumario*/
+
+
+.separador p{
+    color: black;
+    text-align: left;
+    margin-top: 10px;
+}
+
+
+/*referencia h2 orden del dia*/
+
+.scroll h2{
+    text-align: center;
+    color: #777e81;
+}
+
+/*texto grabado
+
+.grabado{
+    position: fixed;
+    left: 500px;
+    top: 200px;
+    width: 100px;
+    z-index: 2;
+    
+}
+
+.grabado h1{
+    text-align: center;
+    color: antiquewhite;
+    text-shadow: 1px 0.5px 0 #bbc1c3;
+}
+*/
+
+.categoria{
+    width: 60%;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 14 (min-content 30px max-content 200px);
+    padding-bottom: 10px;
+
+}
+.categoria div{
+      
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.porcentaje{
+    width:auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 23 (min-content 10% max-content 100%);
+    padding-bottom: 10px;
+    gap: 0;
+    
+
+}
+.porcentaje div{
+    border: 1px solid black;
+    text-align: center;
+    width: 100%;
+    
+    margin: 4%;
+    padding: 3%;
+    
+}
+
+.genero{
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
+
+.varon{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    
+}
+.mujer{
+    grid-column: 3 / 4;
+    grid-row:  2 / 3;
+}
+.sustancia{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+.tabaco{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+.total{
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+}
+
+.barratop span{
+    font-weight: bolder;
+}
+
