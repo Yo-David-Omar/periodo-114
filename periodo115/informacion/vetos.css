@@ -26,22 +26,21 @@ body{
     padding: 3%;
 }
 
-
 .slider-container {
-    width: 100%; /* Ajusta el ancho según lo necesites */
-    height: 180px; /* Ajusta el alto según lo necesites */
+    width: 100%;
+    height: 180px; /* ajusta este valor según necesites */
     overflow: hidden;
-    max-height: 100%;
-    
-    
+    position: relative;
 }
 
 .slider-container img {
-    border-radius: 2%;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 2%;
     display: none;
 }
+
 
 .bord{
     width: 100%;

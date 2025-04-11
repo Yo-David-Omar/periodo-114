@@ -12,9 +12,30 @@ body{
     font-size: .8em;
 }
 
-/*titulo*/
+/*volver a inicio*/
+.back{
+    position: fixed;
+    bottom: 5%;
+    right: 27%;
+    width: 20px;
+    text-align: center;
+    z-index: 600;
+}
+.back a img{
+    width: 40px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 4px;
+}
 
+.back a{
+    color: white;
+}
 
+.back2{
+    position: relative;
+    right: -300px;
+}
 /*principal aside*/
 
 .cuadro{
