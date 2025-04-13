@@ -152,7 +152,9 @@ body{
 .indice p{
     font-size: .9em;
 }
-
+.indice div a{
+    cursor: pointer;
+}
 .indice div{
     font-size: 1em;
 }

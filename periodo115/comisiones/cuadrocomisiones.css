@@ -11,8 +11,37 @@ body{
    /*background-color: #663421;/*
     /*background-color: #1A4D48;*/
 }
-
-
+.barra-comisiones{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    margin-bottom: 7%;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: brown;
+    z-index: 1;
+    div a{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: white;
+        span{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 2em;
+        }
+    }
+}
+.barra-comisiones img{
+    width: 50%;
+    opacity: .5;
+    z-index: -1;
+    transition: all .5s;
+}
+.barra-comisiones:hover img{
+    opacity: 9;
+}
 .division1{
     display: flex;
 
