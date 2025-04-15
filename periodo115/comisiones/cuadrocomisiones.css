@@ -5,30 +5,111 @@
 }
 
 body{
-    background-color:             #8292a9;
-    /* background-color: #4D1A34;*/
-   /*background-color: #25666E;*/
-   /*background-color: #663421;/*
-    /*background-color: #1A4D48;*/
+    background-color: #8292a9;
 }
+/*logo principal*/
+
+.logolegislatura{
+    position: fixed;
+    top: 0;
+    left: 1%;
+    z-index: 3000;
+}
+
+.logolegislatura img{
+    width: 50%;
+    opacity: .4;
+}
+.logolegislatura img:hover{
+    opacity: 2;
+    transition: all .8s;
+}
+.btop{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: brown;
+    box-shadow: 1px 1px 2px rgb(180, 180, 237);
+    /*background-image: linear-gradient(to bottom right,  rgb(97, 154, 207) -60%, #fcfcfc 100%); */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+.btop a{
+    transition: all .5s;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: .8em;
+}
+
+.btop a:hover{
+    font-size: 1.1em;
+}
+
+.encabezado_1ro{ 
+    position: fixed;
+    top: 0;
+    min-width: 100%;
+    z-index: 3000;
+    background-color: white;
+    height: 10%;
+    p{
+        margin-top: 1%;
+        text-align: center;
+    }
+}
+
+
+.encabezado_1ro h4{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+.encabezado_1ro h6{
+    margin-top: 2%;
+    text-align: center;
+    font-family: "Frank Ruhl Libre", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: brown;
+}
+.encabezado_1ro div{
+    position: absolute;
+    background-color: rgb(162, 192, 193);
+    color: aliceblue;
+    right: 8px;
+    top: 6px;
+}
+
 .barra-comisiones{
     position: fixed;
     display: flex;
     justify-content: space-between;
     top: 0;
-    margin-bottom: 7%;
+    padding-bottom: 1%;
+    margin-bottom: 20%;
     left: 0;
     width: 100%;
     height: 60px;
-    background-color: brown;
+    background-color: rgb(255, 255, 255);
     z-index: 1;
+    border-bottom: 6px solid brown;
     div a{
+        padding: 5px;
         display: flex;
         flex-direction: column;
         text-decoration: none;
-        color: white;
+        color: rgb(19, 16, 16);
         span{
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             font-size: 2em;
         }
     }
@@ -66,7 +147,7 @@ body{
 }
 .division2{
     display: flex;
-    margin-top: 2%;
+    margin-top: 5%;
    
 }
 .division2 div{
@@ -261,4 +342,41 @@ body{
 .dir div:hover{
     color: #fcb045;
     cursor: pointer;
+}
+
+/*final de pagina con opcion siguiente pagina*/
+.next{
+    opacity: .5;
+    height: 20%;
+    background-color: rgb(233, 230, 230);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 400;
+}
+.next footer{
+    background-color: rgb(222, 222, 214);
+    margin: 3%;
+    text-align: center;
+    
+    border-radius: 24px;
+    box-shadow: 1px 1px 2px rgb(86, 86, 84);
+    width: 14%;
+}
+.next footer:hover{
+    background-color: #777e81;
+}
+.next a:hover{
+    color: white;
+    border-bottom: 2px solid black;
+}
+.next a{
+    transition: all .5s;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(42, 39, 39);
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    border-bottom: 1px solid rgb(99, 91, 91);
 }
