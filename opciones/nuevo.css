@@ -14,6 +14,25 @@ body{
     background-color: rgb(3, 3, 79);
 }
 
+.boton-inicio {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+
+  .boton-inicio:hover {
+    background-color: gold;
+  }
+
 
 /*opciones barra arriba*/
  
@@ -178,8 +197,8 @@ body{
 }
 .opciones div p{
     text-align: center;
-    width: 10%;
-    height: 40%;
+    width: 15%;
+    height: 50%;
     border-radius: 50%;
     transition: all .5s;
 }
@@ -295,7 +314,6 @@ body{
 /*imagenes*/
 .scroll{
     width: 50%;
-    
 }
 
 .info{
@@ -352,8 +370,8 @@ body{
     color: white;
     text-shadow: 4px 4px 5px black;
     padding: 25%;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%; 
     border-bottom: 1px solid white;
     background-color:  rgb(3, 3, 79);
@@ -365,8 +383,8 @@ body{
     color: white;
     text-shadow: 4px 4px 5px black;
     padding: 25%;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%; 
     border-left: 1px solid white;
     background-color:  rgb(3, 3, 79);
@@ -377,8 +395,8 @@ body{
     color: white;
     text-shadow: 4px 4px 5px black;
     padding: 25%;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%; 
     border-top: 1px solid white;
     background-color:  rgb(3, 3, 79);
@@ -401,7 +419,7 @@ body{
 }
 .circulo1:hover ul{
     background-image: url(/imagenescudo/casadegobotra.jpg);
-    background-size: 100% 150px;
+    background-size: 100% 180px;
     background-repeat: no-repeat;
     
 }
@@ -419,7 +437,7 @@ body{
 }
 .circulo2:hover ul{
     background-image: url(/imagenescudo/edificio.jpg);
-    background-size: 100% 150px;
+    background-size: 100% 180px;
     background-repeat: no-repeat;
 }
 .circulo3 ul li{
@@ -436,7 +454,7 @@ body{
 }
 .circulo3:hover ul{
     background-image: url(/imagenescudo/PoderJudicial.webp);
-    background-size: 100% 150px;
+    background-size: 100% 180px;
     background-repeat: no-repeat;
 }
 
