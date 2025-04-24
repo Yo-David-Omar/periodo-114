@@ -20,6 +20,9 @@ body{
 }
 .clase-header{
     z-index: 1000;
+    nav{
+      background-color: brown;
+    }
 }
 .bot-sidebar{
   border-left: 1px solid #d2dae1;
