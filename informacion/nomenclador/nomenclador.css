@@ -1,6 +1,57 @@
 body{
     background-color: #dce3ea;
 }
+.card-img-top {
+  object-fit: scale-down;
+  height: 200px;
+}
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  img{
+    padding: 4%;
+    &:hover{
+      border: 5px solid rgb(255, 255, 255);
+      transition: all .5s;
+    }
+  }
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.rounded-btn {
+  border-radius: 50px; /* Hace el botón redondo */
+  text-align: center; /* Centra el texto dentro del botón */
+}
+
+.btn-outline-primary {
+  border: 2px solid #007bff; /* Define el color del borde */
+  color: #007bff; /* Define el color del texto */
+}/*
+.btn-outline-primary:hover {
+  background-color: #007bff; /* Cambia el fondo al pasar el mouse 
+  color: white; /* Cambia el color del texto al pasar el mouse 
+  margin-left: 30%;
+}*/
+.hover-card div{
+  transition: all .5s;
+  width: 100%;
+  border: 1px solid rgb(232, 220, 220);
+  border-radius: 50px;
+}
+.hover-card a:hover{
+  transition: all .5s;
+  padding-left: 90%;
+}
+.hover-card h5{
+  margin: 0;
+  background-color: cadetblue;
+  color: white;
+  padding: 2%;
+  margin-bottom: 3%;
+  text-shadow: 1px 2px 3px black;
+}
+
 .cont-titulos h4{
     font-size: 24px;
     border-bottom: 1px solid #d2dae1;
@@ -22,6 +73,9 @@ body{
     z-index: 1000;
     nav{
       background-color: brown;
+    }
+    img{
+      width: 30%;
     }
 }
 .bot-sidebar{
