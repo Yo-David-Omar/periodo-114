@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const images = [
     "/imagenescudo/altabiblioteca.jpg",
     "/imagenescudo/114-periodoleg.png",
+    "/imagenescudo/biblioantigua.jpg",
     "/imagenescudo/altabiblioteca.jpg"
 ];
 
