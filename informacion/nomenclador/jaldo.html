@@ -12,33 +12,32 @@
     <header class="bg-dark text-white text-center py-3 position-fixed clase-header">
   <nav class="navbar navbar-expand-lg text-white fixed-top shadow">
     <div class="container-fluid ">
-      <a class="navbar-brand text-white" href="#">Inicio</a>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ms-auto d-flex justify-content-between">
-          <li class="nav-item"><a class="nav-link" href="#">Autoridades</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Nomenclador</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Índice Temático</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Diario de Sesiones</a></li>
-        </ul>
-      </div>
-
-          <button class="d-block d-md-none btn dropdown-toggle text-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Menú
-          </button>
-          <ul class="dropdown-menu w-25">
-            <li><a class="dropdown-item text-secondary" href="#">Autoridades</a></li>
-            <li><a class="dropdown-item text-secondary" href="#">Nomenclador</a></li>
-            <li><a class="dropdown-item text-secondary" href="#">Índice Temático</a></li>
-            <li><a class="dropdown-item text-secondary" href="#">Diario de Sesiones</a></li>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarContenido">
+          <ul class="navbar-nav w-100 d-flex justify-content-around mb-2 mb-lg-0 text-center">
+            <li>
+              <a class="nav-link text-white" href="/index.html">Inicio</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link text-white" href="/legisladores/autoridades.html">Autoridades</a>
+            </li>
+            <li>
+              <a class="nav-link text-white" href="#">114° PERÍODO LEGISLATIVO</a>
+            </li>
+            <li><a class="nav-link text-white" href="/diariosesiones/cuadrosesiones.html">Diario de Sesiones</a></li>
           </ul>
-        </button>
-      
-      <div class="dropdown ms-auto">
-        <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown">
-          ☰
-        </button>
+          </button>
+    
+    <div class="dropdown ms-auto">
+      <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown">
+        Legisladores
+      </button>
         <ul class="dropdown-menu dropdown-menu-end">
           <div class="h-50 bg-light scroll-auto overflow-auto e-div">
+            <a class="dropdown-item" href="../inicio_integrantes.html"> <strong> ACTIVIDAD PARLAMENTARIA</strong></a>
             <a class="dropdown-item" href="../nomenclador/albarracin.html">ALBARRACÍN, Raúl Eduardo</a>
             <a class="dropdown-item" href="../nomenclador/alfaro.html">ALFARO, Pablo Agustín</a>
             <a class="dropdown-item" href="../nomenclador/alperovich.html">ALPEROVICH, Sara</a>
@@ -93,7 +92,7 @@
             <a class="dropdown-item" href="../nomenclador/mansilla.html">MANSILLA, Sergio Francisco</a>
             <a class="dropdown-item" href="../nomenclador/masso.html">MASSO, Federico Augusto</a>
             <a class="dropdown-item" href="../nomenclador/medina.html">MEDINA, Irene Graciela</a>
-            <a class="dropdown-item" href="../nomenclador/medina.html">MEDINA, Gladys del Valle</a>
+            
             <a class="dropdown-item" href="../nomenclador/mendoza.html">MENDOZA, Sandra Mariela</a>
             <a class="dropdown-item" href="../nomenclador/monteros.html">MONTEROS, Gonzalo Darío</a>
             <a class="dropdown-item" href="../nomenclador/morelli.html">MORELLI, Osvaldo Rubén</a>
@@ -140,7 +139,7 @@
           <div class="position-fixed top-0 start-0 h-100 bg-light shadow-sm p-3">
             <div class="mt-5">
               <img src="/fotos/jaldo.jpg" class="img-fluid rounded-circle mb-3" alt="foto perfil">
-              <h3>JALDO, Osvaldo<br>Vicegobernador</h3>
+              <h3>JALDO, Osvaldo<br><em>Vicegobernador</em></h3>
             </div>
             <div class="btn-group-vertical bot-sidebar e-div">
               <div class="d-flex flex-column justify-content-center align-items-center">
