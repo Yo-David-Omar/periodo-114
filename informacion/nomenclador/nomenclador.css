@@ -216,6 +216,7 @@ h4[id^="scrollspyHeading"] {
 
 .talk_me:hover form{
   display: block;
+  float: right;
 }
 
 .talk_me p{
