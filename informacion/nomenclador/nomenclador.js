@@ -17,13 +17,21 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+  /*<img src="/imagenescudo/hlescudo.png" alt="Imagen 1">
+    <img src="/imagenescudo/edificioleg.jpg" alt="Imagen 2">
+    <img src="/imagenescudo/recinto.webp" alt="Imagen 3">
+    <img src="/imagenescudo/114-periodoleg.png" alt="imagen4">
+    <img src="/imagenescudo/interior-leg2.jpg" alt="">
+    <img src="/imagenescudo/interior-leg1.jpg" alt="">*/
   /*agregar imagenes*/
   // Arreglo con las imágenes
   const images = [
-    "/imagenescudo/altabiblioteca.jpg",
+    "/imagenescudo/hlescudo.png",
+    "/imagenescudo/edificioleg.jpg",
+    "/imagenescudo/recinto.webp",
     "/imagenescudo/114-periodoleg.png",
-    "/imagenescudo/biblioantigua.jpg",
-    "/imagenescudo/altabiblioteca.jpg"
+    "/imagenescudo/interior-leg2.jpg",
+    "/imagenescudo/interior-leg1.jpg"
 ];
 
 const container = document.getElementById('carousel-items-container');
